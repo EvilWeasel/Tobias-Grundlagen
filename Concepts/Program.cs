@@ -20,13 +20,16 @@ Console.WriteLine(date.Year);
 Console.WriteLine(name);
 
 
-
+bool is_true = false;
 // Funktionen
 // x = 5y
-var x = Console.WriteLine("buxtehude");
-var y = Console.ReadLine();
 
-var x = name.Trim();
+string? test_null = null;
+Console.WriteLine("buxtehude");
+//
+// var y = Console.ReadLine();
+
+var trimmed_name = name.Trim();
 
 //Console.WriteLine(x);
 
@@ -36,4 +39,31 @@ var test = 5.5;
 Console.WriteLine((int)test + (int)test);
 
 // explicit conversion
-int num = int.Parse(test);
+// int num = int.Parse(test);
+
+void PrintName()
+{
+  Console.WriteLine("Hello World!");
+}
+/*
+ * JavaScript
+ function printName() {
+  console.log("Hello World!");
+ }
+ * Python
+ def printName():
+   print("Hello World!")
+ # hier gehts dann weiter
+ */
+
+PrintName();
+PrintName();
+
+string GetGreeting()
+{
+  return "Herzlich Willkommen!";
+}
+
+var greeting =  GetGreeting();
+
+Console.WriteLine(greeting);
