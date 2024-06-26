@@ -128,3 +128,16 @@ int test_me = 0;
   }
 }
 Console.WriteLine(my_cool_variable);
+
+
+/*
+{
+  var myvar1 = 0;
+}
+{
+  var myvar1 = 10;
+}
+var myvar2 = 10;
+var myvar2 = 20;
+Console.WriteLine(myvar1);
+*/

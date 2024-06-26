@@ -27,7 +27,7 @@
 // Menü anzeigen mit Optionen
 Console.WriteLine("Willkommen bei TD!");
 
-string[] todos = new string[10];
+string[] todos = new string[20];
 
 // das hier ist aktuell noch null!!!
 // Console.WriteLine(todos[9]);
@@ -36,7 +36,7 @@ do
 {
   Console.Clear();
   Console.WriteLine("Was möchtest du tun?");
-  Console.WriteLine("\t1. Neues Todo erstellen\n\t2. Todos anzeigen\n\t3. Todo abhacken");
+  Console.WriteLine("\t1. Neues Todo erstellen\n\t2. Todos anzeigen\n\t3. Todo abhacken\n\t4. Todo überschreiben");
   var input = Console.ReadLine();
 
   switch (input)
@@ -56,13 +56,13 @@ do
           break;
         }
       }
-
       break;
     case "2":
       Console.WriteLine("Du hast folgende Aufgaben:");
       for (int i = 0; i < todos.Length; i++)
       {
         Console.WriteLine($"\t{i}. {todos[i]}");
+        // if (todos[i] != null)
       }
       Console.WriteLine("Drücke <ENTER> um zurück ins Menü zu kommen.");
       Console.ReadKey();
@@ -82,7 +82,17 @@ do
       break;
     case "4":
       // Updaten/Verändern eines Todos (verändern des strings)
-      // 
+      Console.WriteLine("Welches Todo möchtest du anpassen?");
+      for (int i = 0; i < todos.Length; i++)
+      {
+        Console.WriteLine($"\t{i}. {todos[i]}");
+      }
+      var indexString = Console.ReadLine();
+      int index = int.Parse(indexString);
+
+      Console.WriteLine("Was möchtest du stattdessen tun?");
+      var newTodo = Console.ReadLine();
+      todos[index] = newTodo;
       break;
   }
 } while (true);
