@@ -27,9 +27,9 @@
 // Menü anzeigen mit Optionen
 Console.WriteLine("Willkommen bei TD!");
 
-string[] todos = new string[20];
+List<string> todos = new();
 
-Console.WriteLine(todos.Length); // Ausgabe ist die Kapazität, also 20
+// Console.WriteLine(todos.Count); // Ausgabe ist die Kapazität, also 20
 
 // das hier ist aktuell noch null!!!
 // Console.WriteLine(todos[9]);
@@ -46,25 +46,16 @@ do
     case "1":
       Console.WriteLine("Was hast du zu tun? <Enter zum bestätigen>");
       var todo = Console.ReadLine();
-      // Iterieren durch alle Todos (auch die leeren)
-      for (int i = 0; i < todos.Length; i++)
-      {
-        // Wenn das aktuelle Element im Array leer ist, dann...
-        if (todos[i] == null)
-        {
-          // Fügen wir das Todo hinzu
-          todos[i] = todo;
-          Console.WriteLine("Todo hinzugefügt: " + todos[i]);
-          break;
-        }
-      }
+
+      // Fügen wir das Todo hinzu
+      todos.Add(todo);
+      Console.WriteLine("Todo hinzugefügt: " + todo);
       break;
     case "2":
       Console.WriteLine("Du hast folgende Aufgaben:");
-      for (int i = 0; i < todos.Length; i++)
+      for (int i = 0; i < todos.Count; i++)
       {
         Console.WriteLine($"\t{i}. {todos[i]}");
-        // if (todos[i] != null)
       }
       Console.WriteLine("Drücke <ENTER> um zurück ins Menü zu kommen.");
       Console.ReadKey();
@@ -72,20 +63,18 @@ do
     case "3":
       // Löschen
       Console.WriteLine("Welches Todo möchtest du löschen?");
-      for (int i = 0; i < todos.Length; i++)
+      for (int i = 0; i < todos.Count; i++)
       {
         Console.WriteLine($"\t{i}. {todos[i]}");
       }
       var todoIndexString = Console.ReadLine();
       int todoIndex = int.Parse(todoIndexString);
-      // float todoIndex = float.Parse(todoIndexString);
-      // int todoIndex1 = Convert.ToInt32(todoIndexString);
-      todos[todoIndex] = null;
+      todos.RemoveAt(todoIndex);
       break;
     case "4":
       // Updaten/Verändern eines Todos (verändern des strings)
       Console.WriteLine("Welches Todo möchtest du anpassen?");
-      for (int i = 0; i < todos.Length; i++)
+      for (int i = 0; i < todos.Count; i++)
       {
         Console.WriteLine($"\t{i}. {todos[i]}");
       }
