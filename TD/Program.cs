@@ -29,6 +29,8 @@ Console.WriteLine("Willkommen bei TD!");
 
 string[] todos = new string[20];
 
+Console.WriteLine(todos.Length); // Ausgabe ist die Kapazität, also 20
+
 // das hier ist aktuell noch null!!!
 // Console.WriteLine(todos[9]);
 
