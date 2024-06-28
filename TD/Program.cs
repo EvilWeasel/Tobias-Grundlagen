@@ -69,6 +69,7 @@ do
       }
       var todoIndexString = Console.ReadLine();
       int todoIndex = int.Parse(todoIndexString);
+      // todos.Remove("Bei Penny einkaufen gehen.");
       todos.RemoveAt(todoIndex);
       break;
     case "4":

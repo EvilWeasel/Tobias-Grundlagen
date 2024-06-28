@@ -32,3 +32,5 @@
     "Hours": 0
   }
 ]
+
+myJsonObj[0].yesterday.year

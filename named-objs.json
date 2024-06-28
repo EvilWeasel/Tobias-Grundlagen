@@ -1,0 +1,16 @@
+{
+  "hans": {
+    "name": "Hans",
+    "age": 42
+  },
+  "peter": {
+    "name": "Peter",
+    "age": 33
+  },
+  "lisa": {
+    "name": "Lisa",
+    "age": 24
+  }
+}
+
+myJsonObj.peter.age
