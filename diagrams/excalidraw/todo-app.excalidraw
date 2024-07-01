@@ -79,8 +79,8 @@
     },
     {
       "type": "text",
-      "version": 49,
-      "versionNonce": 1104190329,
+      "version": 50,
+      "versionNonce": 133040505,
       "isDeleted": false,
       "id": "2lO-A5juQpy7pNeTvicrw",
       "fillStyle": "solid",
@@ -102,7 +102,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1719556954131,
+      "updated": 1719578549484,
       "link": null,
       "locked": false,
       "fontSize": 36,
@@ -113,12 +113,12 @@
       "containerId": null,
       "originalText": "TODO-App",
       "lineHeight": 1.25,
-      "baseline": 32
+      "baseline": 31
     },
     {
       "type": "text",
-      "version": 238,
-      "versionNonce": 1974711447,
+      "version": 239,
+      "versionNonce": 1022109335,
       "isDeleted": false,
       "id": "hakolKTbQSox-Uxk-3FFV",
       "fillStyle": "solid",
@@ -140,7 +140,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1719556954137,
+      "updated": 1719578549484,
       "link": null,
       "locked": false,
       "fontSize": 36,
@@ -151,12 +151,12 @@
       "containerId": null,
       "originalText": "- Erstellen eines neuen Todo\n  string newTodo = Console.ReadLine()",
       "lineHeight": 1.25,
-      "baseline": 77
+      "baseline": 76
     },
     {
       "type": "text",
-      "version": 117,
-      "versionNonce": 939574361,
+      "version": 118,
+      "versionNonce": 1950380633,
       "isDeleted": false,
       "id": "2HLDCdlQcBaZsbCjbwHdg",
       "fillStyle": "solid",
@@ -178,7 +178,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1719556954138,
+      "updated": 1719578549484,
       "link": null,
       "locked": false,
       "fontSize": 36,
@@ -189,7 +189,7 @@
       "containerId": null,
       "originalText": "- Anzeigen einer Liste aller Todo's",
       "lineHeight": 1.25,
-      "baseline": 32
+      "baseline": 31
     },
     {
       "type": "text",
@@ -302,8 +302,8 @@
     },
     {
       "type": "text",
-      "version": 39,
-      "versionNonce": 698530519,
+      "version": 40,
+      "versionNonce": 1140407223,
       "isDeleted": false,
       "id": "L3iPxue_AUf-6bGNvx8oj",
       "fillStyle": "solid",
@@ -325,7 +325,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1719556954151,
+      "updated": 1719578549485,
       "link": null,
       "locked": false,
       "fontSize": 36,
@@ -336,12 +336,12 @@
       "containerId": null,
       "originalText": "- Löschen eines Todo's",
       "lineHeight": 1.25,
-      "baseline": 32
+      "baseline": 31
     },
     {
       "type": "text",
-      "version": 94,
-      "versionNonce": 1125925401,
+      "version": 95,
+      "versionNonce": 1228601,
       "isDeleted": false,
       "id": "pUqdsu4O9T7gMN5v-rLEX",
       "fillStyle": "solid",
@@ -363,7 +363,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1719556954152,
+      "updated": 1719578549485,
       "link": null,
       "locked": false,
       "fontSize": 36,
@@ -374,12 +374,12 @@
       "containerId": null,
       "originalText": "- Update eines Todo's (vertippt)",
       "lineHeight": 1.25,
-      "baseline": 32
+      "baseline": 31
     },
     {
       "type": "text",
-      "version": 85,
-      "versionNonce": 1028868087,
+      "version": 86,
+      "versionNonce": 1323740375,
       "isDeleted": false,
       "id": "S12fzgHk1alQVlknFitmw",
       "fillStyle": "solid",
@@ -403,7 +403,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1719556954153,
+      "updated": 1719578549485,
       "link": null,
       "locked": false,
       "fontSize": 36,
@@ -414,12 +414,12 @@
       "containerId": null,
       "originalText": "Create",
       "lineHeight": 1.25,
-      "baseline": 32
+      "baseline": 31
     },
     {
       "type": "text",
-      "version": 112,
-      "versionNonce": 1784583929,
+      "version": 113,
+      "versionNonce": 2043179033,
       "isDeleted": false,
       "id": "I_RC0gCTdep1pFSx8pMSW",
       "fillStyle": "solid",
@@ -443,7 +443,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1719556954153,
+      "updated": 1719578549485,
       "link": null,
       "locked": false,
       "fontSize": 36,
@@ -454,12 +454,12 @@
       "containerId": null,
       "originalText": "Read",
       "lineHeight": 1.25,
-      "baseline": 32
+      "baseline": 31
     },
     {
       "type": "text",
-      "version": 93,
-      "versionNonce": 1639264535,
+      "version": 94,
+      "versionNonce": 961083895,
       "isDeleted": false,
       "id": "7kiig5oAlALV3tG1HqVWQ",
       "fillStyle": "solid",
@@ -483,7 +483,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1719556954154,
+      "updated": 1719578549485,
       "link": null,
       "locked": false,
       "fontSize": 36,
@@ -494,12 +494,12 @@
       "containerId": null,
       "originalText": "Delete",
       "lineHeight": 1.25,
-      "baseline": 32
+      "baseline": 31
     },
     {
       "type": "text",
-      "version": 59,
-      "versionNonce": 608391129,
+      "version": 60,
+      "versionNonce": 391447801,
       "isDeleted": false,
       "id": "tIgL6JYIzJR1-dXS8OTZs",
       "fillStyle": "solid",
@@ -523,7 +523,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1719556954154,
+      "updated": 1719578549486,
       "link": null,
       "locked": false,
       "fontSize": 36,
@@ -534,7 +534,7 @@
       "containerId": null,
       "originalText": "Update",
       "lineHeight": 1.25,
-      "baseline": 32
+      "baseline": 31
     },
     {
       "type": "rectangle",
@@ -570,8 +570,8 @@
     },
     {
       "type": "text",
-      "version": 99,
-      "versionNonce": 809301559,
+      "version": 100,
+      "versionNonce": 2015666967,
       "isDeleted": false,
       "id": "-HeIleNp-jh8XmcN-2PWi",
       "fillStyle": "solid",
@@ -593,7 +593,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1719556954155,
+      "updated": 1719578549486,
       "link": null,
       "locked": false,
       "fontSize": 36,
@@ -604,12 +604,12 @@
       "containerId": null,
       "originalText": "CRUD",
       "lineHeight": 1.25,
-      "baseline": 32
+      "baseline": 31
     },
     {
       "type": "text",
-      "version": 72,
-      "versionNonce": 920513721,
+      "version": 73,
+      "versionNonce": 71040473,
       "isDeleted": false,
       "id": "Q0EA8qHDul2oGR7L_Q1Jd",
       "fillStyle": "solid",
@@ -631,7 +631,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1719556954156,
+      "updated": 1719578549486,
       "link": null,
       "locked": false,
       "fontSize": 36,
@@ -642,7 +642,7 @@
       "containerId": null,
       "originalText": "SQL-Datenbanken",
       "lineHeight": 1.25,
-      "baseline": 32
+      "baseline": 31
     },
     {
       "type": "rectangle",
@@ -1426,8 +1426,8 @@
     },
     {
       "type": "text",
-      "version": 392,
-      "versionNonce": 533665623,
+      "version": 393,
+      "versionNonce": 1810769975,
       "isDeleted": false,
       "id": "6pVXfdOHzB2QWduMMiAOT",
       "fillStyle": "solid",
@@ -1447,7 +1447,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1719556954163,
+      "updated": 1719578549486,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1458,12 +1458,12 @@
       "containerId": null,
       "originalText": "pc: Was willst du tun?\nuser: create\npc: Was hast du zu tun?\nuser: Ich muss Milch kaufen.\npc: Klar, hier alle deine neuen Todos\npc: Okay, geb dein nächstes Todo ein:\nuser: Eier auch.",
       "lineHeight": 1.25,
-      "baseline": 168
+      "baseline": 167
     },
     {
       "type": "text",
-      "version": 416,
-      "versionNonce": 1506930073,
+      "version": 417,
+      "versionNonce": 798022329,
       "isDeleted": false,
       "id": "aMUTndgwL1AitSB4kucBC",
       "fillStyle": "solid",
@@ -1483,7 +1483,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1719556954165,
+      "updated": 1719578549486,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1494,7 +1494,7 @@
       "containerId": null,
       "originalText": "pc: Was willst du tun?\nuser: create\npc: Was hast du zu tun?\nuser: Ich muss Milch kaufen.\npc: Klar, hier alle deine neuen Todos\npc: Was willst du jetzt tun?\nuser: Delete",
       "lineHeight": 1.25,
-      "baseline": 168
+      "baseline": 167
     },
     {
       "type": "arrow",

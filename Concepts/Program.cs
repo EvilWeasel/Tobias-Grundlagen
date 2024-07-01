@@ -2,27 +2,41 @@
 var input = Console.ReadLine();
 // int index = Convert.ToInt32(input);
 // int index = int.Parse(input);
-bool error = int.TryParse(input, out int index);
+bool error = int.TryParse(input, out int output);
 
 if (!error)
 {
   Console.WriteLine(error);
 } else
 {
-  Console.WriteLine(index);
+  Console.WriteLine(output);
 }
+// Funktionsbezeichner (Namen) muss eindeutig sein!
+// int getIndex()
+// {
+//   Console.WriteLine();
+//   var input = Console.ReadLine();
+//   var number = int.Parse(input);
+//   return number;
+// }
 
-
-int getIndex()
+// Beispiel: Funktion/Methode mit Parameter
+// Eine Funktion kann keinen, einen oder beliebig viele Parameter bekommen
+// Die Parameter können die Funktionsweise einer Methode dynamisch ändern
+int getIndex(string prompt) // Funktionssignatur
 {
-  Console.WriteLine("Gebe die Aufgabe ein, die du bearbeiten willst:");
+  Console.WriteLine(prompt);
   var input = Console.ReadLine();
   var number = int.Parse(input);
   return number;
 }
 
-string[] my_todos = ["Wäsche waschen", "Bügeln"];
+List<string> todos = new();
 
-int my_index = getIndex();
-// int my_second_index = getIndex(); // kann beliebig oft aufgerufen werden
-// Console.WriteLine(my_todos[my_index]);
+todos.Add("Wäsche waschen");
+todos.Add("Bügeln");
+
+
+int index = getIndex("Gebe die Aufgabe ein, die du bearbeiten willst:");
+// int my_second_index = getIndex("...einen anderen Text eingeben"); // kann beliebig oft aufgerufen werden
+Console.WriteLine(todos[index]);

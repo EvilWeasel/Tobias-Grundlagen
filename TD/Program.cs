@@ -24,6 +24,18 @@
 }
 */
 
+// Erstelle eine Funktion, für die Ausgabelogik der Liste
+
+
+int getIndex(string prompt) // Funktionssignatur
+{
+  Console.WriteLine(prompt);
+  var input = Console.ReadLine();
+  var number = int.Parse(input);
+  return number;
+}
+
+
 // Menü anzeigen mit Optionen
 Console.WriteLine("Willkommen bei TD!");
 
@@ -50,6 +62,9 @@ do
       // Fügen wir das Todo hinzu
       todos.Add(todo);
       Console.WriteLine("Todo hinzugefügt: " + todo);
+      // Lässt den aktuellen Prozess schlafen.
+      Thread.Sleep(2000); // 2 Sekunden delay für Ansicht
+      // Console.ReadLine(); // User entscheidet länge der Pause
       break;
     case "2":
       Console.WriteLine("Du hast folgende Aufgaben:");
@@ -62,29 +77,27 @@ do
       break;
     case "3":
       // Löschen
-      Console.WriteLine("Welches Todo möchtest du löschen?");
       for (int i = 0; i < todos.Count; i++)
       {
         Console.WriteLine($"\t{i}. {todos[i]}");
       }
-      var todoIndexString = Console.ReadLine();
-      int todoIndex = int.Parse(todoIndexString);
+      var todoIndex = getIndex("Welches Todo möchtest du löschen?");
       // todos.Remove("Bei Penny einkaufen gehen.");
       todos.RemoveAt(todoIndex);
       break;
     case "4":
       // Updaten/Verändern eines Todos (verändern des strings)
-      Console.WriteLine("Welches Todo möchtest du anpassen?");
       for (int i = 0; i < todos.Count; i++)
       {
         Console.WriteLine($"\t{i}. {todos[i]}");
       }
-      var indexString = Console.ReadLine();
-      int index = int.Parse(indexString);
+      var index = getIndex("Welches Todo möchtest du anpassen?");
 
       Console.WriteLine("Was möchtest du stattdessen tun?");
       var newTodo = Console.ReadLine();
       todos[index] = newTodo;
+
+      Console.WriteLine("Text verändert: ", newTodo);
       break;
   }
 } while (true);
