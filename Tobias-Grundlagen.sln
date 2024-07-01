@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concepts", "Concepts\Concep
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TD", "TD\TD.csproj", "{9897692F-18FC-48BD-8F82-22EDB009052D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "old-template", "old-template\old-template.csproj", "{99749611-52DE-4ABF-A95B-6D0B85647FBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "old-template", "old-template\old-template.csproj", "{99749611-52DE-4ABF-A95B-6D0B85647FBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aufgaben", "Aufgaben\Aufgaben.csproj", "{D00EA744-E343-49BE-8211-A1BBC7BFBC4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{99749611-52DE-4ABF-A95B-6D0B85647FBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99749611-52DE-4ABF-A95B-6D0B85647FBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99749611-52DE-4ABF-A95B-6D0B85647FBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D00EA744-E343-49BE-8211-A1BBC7BFBC4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D00EA744-E343-49BE-8211-A1BBC7BFBC4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D00EA744-E343-49BE-8211-A1BBC7BFBC4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D00EA744-E343-49BE-8211-A1BBC7BFBC4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
