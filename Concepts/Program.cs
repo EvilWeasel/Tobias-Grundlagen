@@ -14,7 +14,7 @@ if (!error)
 // Funktionsbezeichner (Namen) muss eindeutig sein!
 // int getIndex()
 // {
-//   Console.WriteLine();
+//   Console.WriteLine("Gebe etwas ein: ");
 //   var input = Console.ReadLine();
 //   var number = int.Parse(input);
 //   return number;
@@ -36,7 +36,9 @@ List<string> todos = new();
 todos.Add("Wäsche waschen");
 todos.Add("Bügeln");
 
-
+// Die nächsten 2 Zeilen sind funktional identisch mit der dritten folgenden Zeile
+// Console.WriteLine(""Gebe die Aufgabe ein, die du bearbeiten willst:"")
+// int index = int.Parse(Console.ReadLine());
 int index = getIndex("Gebe die Aufgabe ein, die du bearbeiten willst:");
 // int my_second_index = getIndex("...einen anderen Text eingeben"); // kann beliebig oft aufgerufen werden
 Console.WriteLine(todos[index]);

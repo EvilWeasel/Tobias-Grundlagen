@@ -26,6 +26,7 @@
 
 // Erstelle eine Funktion, für die Ausgabelogik der Liste
 
+List<string> todos = new();
 
 int getIndex(string prompt) // Funktionssignatur
 {
@@ -35,11 +36,32 @@ int getIndex(string prompt) // Funktionssignatur
   return number;
 }
 
+void printTodos()
+{
+  // Wenn nur eine einzige Anweisung auf ein if-/else Statement folgt, kann man die curly-braces {} weglassen
+  if (todos.Count >= 2)
+    Console.WriteLine("Du hast folgende Aufgaben:");
+  else if (todos.Count == 0)
+    Console.WriteLine("Du hast keine Aufgaben. Feierabend?:");
+  else
+    Console.WriteLine("Du hast folgende Aufgabe:");
+
+  for (int i = 0; i < todos.Count; i++)
+  {
+    Console.WriteLine($"\t{i}. {todos[i]}");
+  }
+}
+
+void showTodos()
+{
+  printTodos();
+  Console.WriteLine("Drücke <ENTER> um zurück ins Menü zu kommen.");
+  Console.ReadKey();
+}
 
 // Menü anzeigen mit Optionen
 Console.WriteLine("Willkommen bei TD!");
 
-List<string> todos = new();
 
 // Console.WriteLine(todos.Count); // Ausgabe ist die Kapazität, also 20
 
@@ -67,37 +89,33 @@ do
       // Console.ReadLine(); // User entscheidet länge der Pause
       break;
     case "2":
-      Console.WriteLine("Du hast folgende Aufgaben:");
-      for (int i = 0; i < todos.Count; i++)
-      {
-        Console.WriteLine($"\t{i}. {todos[i]}");
-      }
-      Console.WriteLine("Drücke <ENTER> um zurück ins Menü zu kommen.");
-      Console.ReadKey();
+      showTodos();
       break;
     case "3":
       // Löschen
-      for (int i = 0; i < todos.Count; i++)
-      {
-        Console.WriteLine($"\t{i}. {todos[i]}");
-      }
+      printTodos();
       var todoIndex = getIndex("Welches Todo möchtest du löschen?");
       // todos.Remove("Bei Penny einkaufen gehen.");
+
+      // hole todo, vor dem löschen, zum anzeigen
+      string todoToRemove = todos[todoIndex];
+      // lösche todo
       todos.RemoveAt(todoIndex);
+      // zeige gelöschtes todo dem user
+      Console.WriteLine($"GELÖSCHT: {todoToRemove}");
+      showTodos();
       break;
     case "4":
       // Updaten/Verändern eines Todos (verändern des strings)
-      for (int i = 0; i < todos.Count; i++)
-      {
-        Console.WriteLine($"\t{i}. {todos[i]}");
-      }
+      printTodos();
       var index = getIndex("Welches Todo möchtest du anpassen?");
 
       Console.WriteLine("Was möchtest du stattdessen tun?");
       var newTodo = Console.ReadLine();
       todos[index] = newTodo;
 
-      Console.WriteLine("Text verändert: ", newTodo);
+      Console.WriteLine("Text verändert: " + newTodo);
+      showTodos();
       break;
   }
 } while (true);
