@@ -13,9 +13,17 @@ namespace Aufgaben
     /// Eine Funktion, welche eine Sammlung und ein gesuchtes Element übergeben bekommt,
     /// und den entsprechenden Index des El ements im Array zurück gibt.
     /// </summary>
-    internal static void FindIndex()
+    internal static int FindIndex(List<int> numbers, int query)
     {
-      Console.WriteLine("FIND INDEX");
+      // iterieren (durchzählen) durch numbers
+      // wenn: numbers[i] == query
+      //   return i;
+      for (int i = 0; i < numbers.Count; i++)
+      {
+        if (numbers[i] == query) return i;
+      }
+      // wenn query nicht gefunden, return -1
+      return -1;
     }
 
     internal static void NextFeature()
