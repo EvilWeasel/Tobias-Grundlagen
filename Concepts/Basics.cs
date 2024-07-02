@@ -1,5 +1,8 @@
 ﻿namespace Concepts
 {
+#pragma warning disable CS0219 // Unnecessary assignment of a value
+#pragma warning disable CS0168 // Unnecessary assignment of a value
+#pragma warning disable CS8600 // Unnecessary assignment of a value
   internal class Basics
   {
     internal void Run()

@@ -27,7 +27,7 @@ int getIndex(string prompt) // Funktionssignatur
 {
   Console.WriteLine(prompt);
   var input = Console.ReadLine();
-  var number = int.Parse(input);
+  var number = int.Parse(input ?? "0");
   return number;
 }
 
