@@ -12,6 +12,22 @@ namespace Aufgaben
     // FindIndex Optimized
     internal static int FindIndexOptimized(List<int> numbers, int query)
     {
+      var low = 0;
+      var high = numbers.Count - 1; // Der höchste Index
+      int mid = 0;
+      while(high >= low)
+      {
+        mid = (high + low) / 2;
+        if (numbers[mid] == query) return mid;
+        else if (numbers[mid] < query)
+        {
+          low = mid + 1;
+        } else
+        {
+          high = mid - 1;
+        }
+      }
+      // if (numbers[mid] == query) return mid;
       return -1;
     }
 

@@ -6,6 +6,7 @@ Example.Test();
 
 // Was wenn diese Liste hier einen Count von 1.000.000+ hat?
 List<int> numbers = new(){ 1, 2, 3, 4, 5, 6, 7 };
+List<int> numbers_even = new(){ 1, 2, 3, 4, 5, 6 };
 int query = 6;
 
 // Aufgabe: Find Index
@@ -16,9 +17,10 @@ var manyNumbers = Sammlungen.GenerateNumbers(1_000_000_000);
 var manyNumbersQuery = 999_999_999;
 Console.WriteLine(manyNumbers.Count);
 var manyNumbersIndex = Sammlungen.FindIndexAlt(manyNumbers, manyNumbersQuery);
-Console.WriteLine($"FindIndex ManyNumbers; Sollte 999_999_999; Ist {manyNumbersIndex}"); // sollte 5 sein
+Console.WriteLine($"FindIndex ManyNumbers SLOW; Sollte 999_999_999; Ist {manyNumbersIndex}"); // sollte 5 sein
 
-
+var manyNumberFastIndex = Sammlungen.FindIndexOptimized(manyNumbers, manyNumbersQuery);
+Console.WriteLine($"FindIndex ManyNumbers FAST; Sollte 999_999_999; Ist {manyNumberFastIndex}"); // sollte 5 sein
 
 
 
