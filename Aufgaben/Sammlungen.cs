@@ -157,8 +157,8 @@ namespace Aufgaben
         /* auch mit if möglich
          if (height == i - 1) { }
          Nach jeder Zeile
-        hashNumber += 2;
         */
+        hashNumber += 2;
         whitespaceAmount--;
         Console.WriteLine();
       }
