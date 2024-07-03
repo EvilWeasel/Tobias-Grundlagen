@@ -119,8 +119,79 @@ namespace Aufgaben
     ///  #####
     /// #######
     ///    #
-    /// BaumBauer()
+    /// BaumBauer();
     /// </summary>
-    internal static void BaumBauer() { }
+    internal static void BaumBauer(int height = 5) 
+    {
+      /*
+      Console.WriteLine("   #");
+      Console.WriteLine("  ###");
+      Console.WriteLine(" #####");
+      Console.WriteLine("#######");
+      Console.WriteLine("   #");
+      Console.WriteLine("     #");
+      Console.WriteLine("    ###");
+      Console.WriteLine("   #####");
+      Console.WriteLine("  #######");
+      Console.WriteLine(" #########");
+      Console.WriteLine("###########");
+      Console.WriteLine("   #");
+      */
+      Console.WriteLine("BaumBauer v.1.0");
+      int hashNumber = 1;
+      int whitespaceAmount = height - 2;
+      for (int i = 0; i < height; i++) // Eine Zeile
+      {
+        // Whitespace vor dem #
+        for (int j = 0; j < whitespaceAmount; j++)
+        {
+          Console.Write(" ");
+        }
+        // hashtags => #
+        for (int j = 0; j < hashNumber; j++)
+        {
+          Console.Write("#");
+        }
+        /* auch mit if möglich
+         if (height == i - 1) { }
+         Nach jeder Zeile
+        hashNumber += 2;
+        */
+        whitespaceAmount--;
+        Console.WriteLine();
+      }
+      // spezialfall
+      whitespaceAmount = height - 2;
+      // Whitespace vor dem #
+      for (int j = 0; j < whitespaceAmount; j++)
+      {
+        Console.Write(" ");
+      }
+      Console.Write("#");
+    }
+
+    /// <summary>
+    /// Finde den niedrigsten Wert in einem Array arbiträrer Länge, und gebe diesen Zurück.
+    /// </summary>
+    /// <param name="numbers"></param>
+    /// <returns>Der niedrigste Wert, aus dem gegebenen Array</returns>
+    internal static int FindSmallestValue(int[] numbers) 
+    { 
+      return 0; 
+    }
+
+    /// <summary>
+    /// Gebe eine neue Liste zurück, welche nur alle geraden Zahlen beinhaltet.
+    /// Input: [1,2,3,4,5,6]
+    /// Output: [2,4,6]
+    /// </summary>
+    /// <param name="numbers"></param>
+    /// <returns></returns>
+    internal static List<int> OnlyEven(List<int> numbers) 
+    { 
+      return new List<int>();
+    }
+
+    
   }
 }

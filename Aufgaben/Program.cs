@@ -1,6 +1,8 @@
 ﻿// Der ganze Code in dieser Datei ist in der Program.Main Funktion.
 using Aufgaben;
 
+/*
+
 // Kommt aus Example.Test -> Example.cs file
 Example.Test();
 
@@ -22,7 +24,7 @@ Console.WriteLine($"FindIndex ManyNumbers SLOW; Sollte 999_999_999; Ist {manyNum
 var manyNumberFastIndex = Sammlungen.FindIndexOptimized(manyNumbers, manyNumbersQuery);
 Console.WriteLine($"FindIndex ManyNumbers FAST; Sollte 999_999_999; Ist {manyNumberFastIndex}"); // sollte 5 sein
 
-
+*/
 
 
 List<int> temperatures = new() { 20, 22, 19, 24, 21, 18, 25 };
@@ -38,4 +40,4 @@ var averageTemp = Temperature.Average(temperatures);
 Console.WriteLine($"Average: {averageTemp}"); // sollte 21.285714285714285 sein
 
 
-
+Sammlungen.BaumBauer();
