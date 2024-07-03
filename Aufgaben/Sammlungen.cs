@@ -140,6 +140,8 @@ namespace Aufgaben
       Console.WriteLine("BaumBauer v.1.0");
       int hashNumber = 1;
       int whitespaceAmount = height - 2;
+      // var thisLine = new string('#', 10);
+      // Console.WriteLine(new string(' ',whitespaceAmount));
       for (int i = 0; i < height; i++) // Eine Zeile
       {
         // Whitespace vor dem #
@@ -171,6 +173,21 @@ namespace Aufgaben
     }
 
     /// <summary>
+    /// Eine Funktion, welche einen Diamanten in der Konsole druckt.
+    /// Input: Wie gewünscht
+    /// Output (Console.WriteLine()): 
+    ///    #
+    ///   ###
+    ///  #####
+    /// #######
+    ///  #####
+    ///   ###
+    ///    #
+    /// DiamondBauer();
+    /// </summary>
+    internal static void DiamondBauer() { }
+
+    /// <summary>
     /// Finde den niedrigsten Wert in einem Array arbiträrer Länge, und gebe diesen Zurück.
     /// </summary>
     /// <param name="numbers"></param>
@@ -190,8 +207,6 @@ namespace Aufgaben
     internal static List<int> OnlyEven(List<int> numbers) 
     { 
       return new List<int>();
-    }
-
-    
+    }    
   }
 }
