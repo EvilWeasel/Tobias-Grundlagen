@@ -30,9 +30,7 @@ namespace Aufgaben
       // if (numbers[mid] == query) return mid;
       return -1;
     }
-
-
-    /// <summary>
+      /// <summary>
     /// Eine Funktion, welche eine Sammlung und ein gesuchtes Element übergeben bekommt,
     /// und den entsprechenden Index des El ements im Array zurück gibt.
     /// </summary>
@@ -68,5 +66,61 @@ namespace Aufgaben
         numbers.Add(i);
       return numbers;
     }
+
+    /// <summary>
+    /// Eine Funktion, welche eine Liste mit Integers bekommt, und in der Konsole
+    /// die Häufigkeit jedes Elements druckt.
+    /// Beispiel
+    /// Input: [1,2,3,3,5,2,-10,-10]
+    /// 
+    /// Output:
+    /// Zahl 1: 1
+    /// Zahl 2: 2
+    /// Zahl 3: 2
+    /// Zahl 5: 1
+    /// Zahl -10: 2
+    /// </summary>
+    internal static void GroupBy(List<int> numbers) 
+    {
+      /*
+      Dictionary<int, int> dict = new();
+      var isOneInNumbers = dict.ContainsKey(1); // true or false
+      dict[5] = 1;
+      dict[5]++;
+      */
+      /*
+        int[,] groupedNumbers = new int[numbers.Count, 2];
+        // [[1,1],[2,2],[3,2],[5,1],[-10,2],[],[],[]]
+        groupedNumbers[0,0] = 1;
+        groupedNumbers[0,1] = 1;
+        groupedNumbers[1, 0] = 2;
+        groupedNumbers[1, 1] = 2;
+        groupedNumbers[2, 0] = 3;
+        groupedNumbers[2, 1] = 1;
+      */
+      // [[1,1],[2,2],[3,2],[5,1],[-10,2],[],[],[]]
+      // [1,1,2,2,3,2,5,1,-10,2]
+      /*
+        var groupedNumbers = new int[numbers.Count * 2];
+        groupedNumbers[0] = 1;
+        groupedNumbers[1] = 1;
+        groupedNumbers[4] = 3;
+        groupedNumbers[5] = 2;
+      */
+
+    }
+
+    /// <summary>
+    /// Eine Funktion, welche einen Weihnachtsbaum in der Konsole druckt.
+    /// Input: Wie gewünscht
+    /// Output (Console.WriteLine()): 
+    ///    #
+    ///   ###
+    ///  #####
+    /// #######
+    ///    #
+    /// BaumBauer()
+    /// </summary>
+    internal static void BaumBauer() { }
   }
 }

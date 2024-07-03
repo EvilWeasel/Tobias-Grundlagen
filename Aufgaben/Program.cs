@@ -36,3 +36,6 @@ aboveIndices.ForEach(Console.WriteLine); // sollte index [1,3,6] sein
 
 var averageTemp = Temperature.Average(temperatures);
 Console.WriteLine($"Average: {averageTemp}"); // sollte 21.285714285714285 sein
+
+
+
