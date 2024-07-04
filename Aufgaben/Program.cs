@@ -28,6 +28,8 @@ Console.WriteLine($"FindIndex ManyNumbers FAST; Sollte 999_999_999; Ist {manyNum
 
 
 List<int> temperatures = new() { 20, 22, 19, 24, 21, 18, 25 };
+// Folgende Zeile ruft einen Index außerhalb des Arrays (Range) auf
+// var x = temperatures[69]; // Runtime-Error
 var tempLimit = 21;
 List<int> aboveIndices = Temperature.AboveMin(temperatures, tempLimit);
 
@@ -41,3 +43,10 @@ Console.WriteLine($"Average: {averageTemp}"); // sollte 21.285714285714285 sein
 
 
 Sammlungen.BaumBauer();
+
+var minTemp = Sammlungen.FindSmallestValue(temperatures.ToArray());
+Console.WriteLine(minTemp);
+
+var unsortedNums = new int[]{1, 2, 3, 4, 5, 6};
+var evenNums = Sammlungen.OnlyEven(unsortedNums.ToList());
+evenNums.ForEach(Console.Write);

@@ -1,4 +1,5 @@
-﻿Console.WriteLine("Gebe eine Zahl ein:");
+﻿/*
+Console.WriteLine("Gebe eine Zahl ein:");
 var input = Console.ReadLine();
 // int index = Convert.ToInt32(input);
 // int index = int.Parse(input);
@@ -39,7 +40,44 @@ todos.Add("Bügeln");
 // Die nächsten 2 Zeilen sind funktional identisch mit der dritten folgenden Zeile
 // Console.WriteLine(""Gebe die Aufgabe ein, die du bearbeiten willst:"")
 // int index = int.Parse(Console.ReadLine());
-int index = getIndex("Gebe die Aufgabe ein, die du bearbeiten willst:");
+int index1 = getIndex("Gebe die Aufgabe ein, die du bearbeiten willst:");
 // int my_second_index = getIndex("...einen anderen Text eingeben"); // kann beliebig oft aufgerufen werden
-Console.WriteLine(todos[index]);
+Console.WriteLine(todos[index1]);
+*/
 
+var contact = Console.ReadLine();
+
+var contact2 = Console.ReadLine();
+
+var contact3 = Console.ReadLine();
+
+
+List<string> names = new List<string>();
+names.Add("Markus");
+names.Add("Jane");
+names.Add("Silvio");
+
+for (int index = 0; index < 3; index++)
+{
+  string name = names[index];
+  Console.WriteLine(name);
+}
+
+var test = "hello";
+
+foreach(string name in names)
+{
+  Console.WriteLine(name);
+}
+
+foreach(char character in test)
+{
+  Console.WriteLine(character);
+}
+
+int index1 = 0; // Originale Speicheraddresse des Arrays (ohne offset)
+while (index1 < names.Count)
+{
+  Console.WriteLine(names[index1]);
+  index1++;
+}

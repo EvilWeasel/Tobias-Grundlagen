@@ -169,7 +169,7 @@ namespace Aufgaben
       {
         Console.Write(" ");
       }
-      Console.Write("#");
+      Console.Write("#\n");
     }
 
     /// <summary>
@@ -193,8 +193,12 @@ namespace Aufgaben
     /// <param name="numbers"></param>
     /// <returns>Der niedrigste Wert, aus dem gegebenen Array</returns>
     internal static int FindSmallestValue(int[] numbers) 
-    { 
-      return 0; 
+    {
+      int minimum = numbers[0];
+      foreach(int number in numbers)
+        if (number < minimum)
+          minimum = number;
+      return minimum;
     }
 
     /// <summary>
@@ -205,8 +209,12 @@ namespace Aufgaben
     /// <param name="numbers"></param>
     /// <returns></returns>
     internal static List<int> OnlyEven(List<int> numbers) 
-    { 
-      return new List<int>();
-    }    
+    {
+      List<int> evenNumbers = new();
+      foreach(int number in numbers)
+        if(number % 2 == 0)
+          evenNumbers.Add(number);
+      return evenNumbers;
+    }
   }
 }
