@@ -29,5 +29,38 @@ namespace Aufgaben
     /// <param name="text"></param>
     /// <returns></returns>
     internal static int CountWords(string text) { return 0; }
+
+    /// <summary>
+    /// Eine Funktion, welche die Anzahl an Buchstaben des letzten Wortes des Textes zurückgibt.
+    /// <param name="text">Eine beliebig lange Sequenz an Text</param>
+    /// <list type="bullet">
+    /// <item>
+    /// Input: "Mein Hamster hat meine Hausis gefressen"
+    /// Output: 9
+    /// </item>
+    /// <item>
+    /// Input: "Döner mit Scharf"
+    /// Output: 6
+    /// </item>
+    /// </list>
+    /// <returns>Die Anzahl an Buchstaben im letzten Wort als Int</returns>
+    /// </summary>
+    internal static int CountCharsOfLastWordInText(string text) { return 0; }
+
+    /// <summary>
+    /// Eine Funktion, welche einen beliebigen Text als Input bekommt und in der Konsole die Anzahl an Vokalen und Konsonanten anzeigt.
+    /// Input: "Buxtehude"
+    /// Output: Anzahl Vokale: 4
+    ///         Anzahl Konsonanten: 5
+    /// Input: "lorem ipsum dolor est"
+    /// Output: Anzahl Vokale: 7
+    ///         Anzahl Konsonanten: 11
+    /// 
+    /// HINT: Sind Leerzeichen Vokale oder Konsonanten?
+    /// </summary>
+    /// <param name="text"></param>
+    internal static void PrintConsonantAndVowels(string text) { }
+
+
   }
 }
