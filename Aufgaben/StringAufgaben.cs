@@ -16,7 +16,19 @@ namespace Aufgaben
     /// Output: "r e t s m a H"
     /// </summary>
     /// <param name="text"></param>
-    internal static void PrintBackwards(string text) { }
+    internal static void PrintBackwards(string text) 
+    {
+      // beispiel: "abc"
+      // 1. iter: i = 2
+      // 2. iter: i = 1
+      // 3. iter: i = 0
+      // Console.WriteLine(text.Reverse());
+      for (int i = text.Length - 1; i >= 0; i--)
+      {
+        Console.Write(text[i] + " ");
+      }
+      Console.WriteLine();
+    }
 
     /// <summary>
     /// Eine Funktion, welche die Anzahl von Worten in einer beliebigen Zeichenkette zählt.
@@ -28,7 +40,25 @@ namespace Aufgaben
     /// </summary>
     /// <param name="text"></param>
     /// <returns></returns>
-    internal static int CountWords(string text) { return 0; }
+    internal static int CountWords(string text)
+    {
+      int wordCount = 1;
+      text = text.Trim();
+      // Wenn string leer, dann ist WordCount = 0
+      if (text == "") return 0;
+      for (int i = 0; i < text.Length; i++)
+      {
+        if(i > 0)
+        {
+          if (text[i] == ' ' && text[i-1] != ' ') wordCount++;
+        }
+        else
+        {
+          if (text[i] == ' ') wordCount++;
+        }
+      }
+      return wordCount;
+    }
 
     /// <summary>
     /// Eine Funktion, welche die Anzahl an Buchstaben des letzten Wortes des Textes zurückgibt.

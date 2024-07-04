@@ -50,3 +50,14 @@ Console.WriteLine(minTemp);
 var unsortedNums = new int[]{1, 2, 3, 4, 5, 6};
 var evenNums = Sammlungen.OnlyEven(unsortedNums.ToList());
 evenNums.ForEach(Console.Write);
+
+Console.WriteLine();
+
+// Console.WriteLine("   oma    opa   ".Replace("  ", " "));
+
+var printMeBackwards = "   Barry B.           Benson        ";
+// Console.Write in der Funktion
+StringAufgaben.PrintBackwards(printMeBackwards);
+
+var wordCount = StringAufgaben.CountWords(printMeBackwards);
+Console.WriteLine($"Count of {printMeBackwards}: " + wordCount);
