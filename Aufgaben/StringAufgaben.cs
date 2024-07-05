@@ -76,7 +76,19 @@ namespace Aufgaben
     /// </list>
     /// <returns>Die Anzahl an Buchstaben im letzten Wort als Int</returns>
     /// </summary>
-    internal static int CountCharsOfLastWordInText(string text) { return 0; }
+    internal static int CountCharsOfLastWordInText(string text)
+    {
+      int gezählteBuchstaben = 0;
+      for (int i = text.Length - 1; i >= 0; i--)
+      {
+        if (text[i] == ' ')
+        {
+          break;
+        }
+        gezählteBuchstaben++;
+      }
+      return gezählteBuchstaben;
+    }
 
     /// <summary>
     /// Eine Funktion, welche einen beliebigen Text als Input bekommt und in der Konsole die Anzahl an Vokalen und Konsonanten anzeigt.

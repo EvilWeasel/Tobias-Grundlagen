@@ -61,3 +61,8 @@ StringAufgaben.PrintBackwards(printMeBackwards);
 
 var wordCount = StringAufgaben.CountWords(printMeBackwards);
 Console.WriteLine($"Count of {printMeBackwards}: " + wordCount);
+Console.WriteLine();
+
+var countLastWord = "Barry B. Bensona";
+var countOfBenson = StringAufgaben.CountCharsOfLastWordInText(countLastWord);
+Console.WriteLine($"{countLastWord.Split(' ').Last()} is {countOfBenson}");
