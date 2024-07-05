@@ -237,7 +237,7 @@ namespace Aufgaben
     /// </summary>
     /// <param name="numbers"></param>
     /// <returns></returns>
-    internal static bool ContainsDuplicates(int[] numbers) { return false; }
+    internal static bool ContainsDuplicates(int[] numbers) { return false;  }
 
   }
 }

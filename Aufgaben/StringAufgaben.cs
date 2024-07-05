@@ -45,6 +45,7 @@ namespace Aufgaben
       int wordCount = 1;
       text = text.Trim();
       // Wenn string leer, dann ist WordCount = 0
+      // "  ksd      fklsd     "
       if (text == "") return 0;
       for (int i = 0; i < text.Length; i++)
       {
@@ -90,7 +91,6 @@ namespace Aufgaben
     /// </summary>
     /// <param name="text"></param>
     internal static void PrintConsonantAndVowels(string text) { }
-
 
   }
 }
