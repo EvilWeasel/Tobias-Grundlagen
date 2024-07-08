@@ -1,0 +1,593 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "type": "text",
+      "version": 142,
+      "versionNonce": 1960672215,
+      "isDeleted": false,
+      "id": "JPoRZoD8qOG3xU89dbxKg",
+      "fillStyle": "hachure",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 537.9604465854444,
+      "y": 81.91151100063325,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "width": 329.9866943359375,
+      "height": 40.071128842415234,
+      "seed": 1281914137,
+      "groupIds": [
+        "fJEZnaRrrQ-GCPoFI92OI"
+      ],
+      "frameId": null,
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1720445867304,
+      "link": null,
+      "locked": false,
+      "fontSize": 32.05690307393219,
+      "fontFamily": 1,
+      "text": "ExpensesTracker-App",
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "ExpensesTracker-App",
+      "lineHeight": 1.25,
+      "baseline": 28
+    },
+    {
+      "type": "text",
+      "version": 353,
+      "versionNonce": 1856639257,
+      "isDeleted": false,
+      "id": "_KBcfjVxqmWXDe4suqA-5",
+      "fillStyle": "hachure",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 452.25486068549884,
+      "y": 157.78706196857297,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "width": 546.1568603515625,
+      "height": 111.3086912289312,
+      "seed": 28076537,
+      "groupIds": [
+        "fJEZnaRrrQ-GCPoFI92OI"
+      ],
+      "frameId": null,
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1720445867305,
+      "link": null,
+      "locked": false,
+      "fontSize": 17.809390596628994,
+      "fontFamily": 1,
+      "text": "Menü für UserInteraktion\n-> Menü soll eine Liste mit allen aktuellen Expenses anzeigen, \n   und eine Summe aller Expenses.\n-> Erstellen einer neuen Expense\n-> Entfernen einer Expense",
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Menü für UserInteraktion\n-> Menü soll eine Liste mit allen aktuellen Expenses anzeigen, \n   und eine Summe aller Expenses.\n-> Erstellen einer neuen Expense\n-> Entfernen einer Expense",
+      "lineHeight": 1.25,
+      "baseline": 104
+    },
+    {
+      "type": "text",
+      "version": 232,
+      "versionNonce": 898492663,
+      "isDeleted": false,
+      "id": "_yk-tG2YfpfMo7tx0LLqe",
+      "fillStyle": "hachure",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 452.68876062946066,
+      "y": 274.2794504752179,
+      "strokeColor": "#f08c00",
+      "backgroundColor": "transparent",
+      "width": 576.505859375,
+      "height": 66.78521473735873,
+      "seed": 1482605273,
+      "groupIds": [
+        "fJEZnaRrrQ-GCPoFI92OI"
+      ],
+      "frameId": null,
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1720445867306,
+      "link": null,
+      "locked": false,
+      "fontSize": 17.809390596628994,
+      "fontFamily": 1,
+      "text": "Zusätzliche Features?\n-> Häufige Expenses anzeigen?\n-> Gruppieren nach Kategorie (z.B. \"Gaming\", \"Work\", \"Einkaufen\",...)",
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Zusätzliche Features?\n-> Häufige Expenses anzeigen?\n-> Gruppieren nach Kategorie (z.B. \"Gaming\", \"Work\", \"Einkaufen\",...)",
+      "lineHeight": 1.25,
+      "baseline": 60
+    },
+    {
+      "type": "text",
+      "version": 281,
+      "versionNonce": 559580665,
+      "isDeleted": false,
+      "id": "4Cq-rqgRGeZ0x0qlTJlb2",
+      "fillStyle": "hachure",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 460.4695248368273,
+      "y": 385.56771867374187,
+      "strokeColor": "#1971c2",
+      "backgroundColor": "transparent",
+      "width": 620.731689453125,
+      "height": 124.66573417640296,
+      "seed": 1561526201,
+      "groupIds": [
+        "fJEZnaRrrQ-GCPoFI92OI"
+      ],
+      "frameId": null,
+      "roundness": null,
+      "boundElements": [
+        {
+          "id": "1IjZKUS_LRChHOCDSClyu",
+          "type": "arrow"
+        },
+        {
+          "id": "N6ncFQzKQC4uhwRlevNWe",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1720445867307,
+      "link": null,
+      "locked": false,
+      "fontSize": 24.933146835280592,
+      "fontFamily": 1,
+      "text": "Wir teilen unsere App in 2 Teile:\n1. Menülogik und Programmstart in Program.Main\n2. Datentyp und Logik für Expenses (Summieren) in\n   einer Expense Klasse.",
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Wir teilen unsere App in 2 Teile:\n1. Menülogik und Programmstart in Program.Main\n2. Datentyp und Logik für Expenses (Summieren) in\n   einer Expense Klasse.",
+      "lineHeight": 1.25,
+      "baseline": 116
+    },
+    {
+      "type": "arrow",
+      "version": 381,
+      "versionNonce": 1786062009,
+      "isDeleted": false,
+      "id": "1IjZKUS_LRChHOCDSClyu",
+      "fillStyle": "hachure",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 622.8315626588721,
+      "y": 514.4780608200181,
+      "strokeColor": "#1971c2",
+      "backgroundColor": "transparent",
+      "width": 129.78542077731726,
+      "height": 68.74822553174174,
+      "seed": 1038917785,
+      "groupIds": [
+        "fJEZnaRrrQ-GCPoFI92OI"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "boundElements": [],
+      "updated": 1720445862403,
+      "link": null,
+      "locked": false,
+      "startBinding": {
+        "elementId": "4Cq-rqgRGeZ0x0qlTJlb2",
+        "focus": 0.05222305752770782,
+        "gap": 4.244607969873215
+      },
+      "endBinding": {
+        "elementId": "LVvLONhMQ1l0uAtmy8rG6",
+        "focus": -0.5272275804986832,
+        "gap": 6.519228283182315
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -129.78542077731726,
+          68.74822553174174
+        ]
+      ]
+    },
+    {
+      "type": "arrow",
+      "version": 329,
+      "versionNonce": 897321593,
+      "isDeleted": false,
+      "id": "N6ncFQzKQC4uhwRlevNWe",
+      "fillStyle": "hachure",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 651.5101470471923,
+      "y": 512.1074323534062,
+      "strokeColor": "#1971c2",
+      "backgroundColor": "transparent",
+      "width": 155.84821348959082,
+      "height": 75.94602629802532,
+      "seed": 413083001,
+      "groupIds": [
+        "fJEZnaRrrQ-GCPoFI92OI"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "boundElements": [],
+      "updated": 1720445862403,
+      "link": null,
+      "locked": false,
+      "startBinding": {
+        "elementId": "4Cq-rqgRGeZ0x0qlTJlb2",
+        "focus": 0.5729239367408706,
+        "gap": 1.8739795032613813
+      },
+      "endBinding": {
+        "elementId": "afzrivOoi28nepAeYeL4v",
+        "focus": 0.28128314249956626,
+        "gap": 1
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          155.84821348959082,
+          75.94602629802532
+        ]
+      ]
+    },
+    {
+      "type": "rectangle",
+      "version": 161,
+      "versionNonce": 983009751,
+      "isDeleted": false,
+      "id": "LVvLONhMQ1l0uAtmy8rG6",
+      "fillStyle": "hachure",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 372.16361445553787,
+      "y": 589.7455146349421,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "width": 229.95096126134388,
+      "height": 121.49470891385435,
+      "seed": 141430361,
+      "groupIds": [
+        "x3uShAKx_chx7QVq8wzaw",
+        "fJEZnaRrrQ-GCPoFI92OI"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "LlVyRUPoPaVQ1M2RgFQaE"
+        },
+        {
+          "id": "1IjZKUS_LRChHOCDSClyu",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1720445862291,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "text",
+      "version": 149,
+      "versionNonce": 1224884247,
+      "isDeleted": false,
+      "id": "LlVyRUPoPaVQ1M2RgFQaE",
+      "fillStyle": "hachure",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 408.99603630935434,
+      "y": 634.9096523198189,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "width": 156.28611755371094,
+      "height": 31.16643354410074,
+      "seed": 1949096761,
+      "groupIds": [
+        "x3uShAKx_chx7QVq8wzaw",
+        "fJEZnaRrrQ-GCPoFI92OI"
+      ],
+      "frameId": null,
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1720445862291,
+      "link": null,
+      "locked": false,
+      "fontSize": 24.933146835280592,
+      "fontFamily": 1,
+      "text": "Program.Main",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "LVvLONhMQ1l0uAtmy8rG6",
+      "originalText": "Program.Main",
+      "lineHeight": 1.25,
+      "baseline": 22
+    },
+    {
+      "type": "rectangle",
+      "version": 155,
+      "versionNonce": 1762665783,
+      "isDeleted": false,
+      "id": "qCThJWCQ3g989UTRu8gs1",
+      "fillStyle": "hachure",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 377.49752850541455,
+      "y": 713.6108520154082,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#e9ecef",
+      "width": 221.6537616282025,
+      "height": 165.35133554617246,
+      "seed": 473893913,
+      "groupIds": [
+        "x3uShAKx_chx7QVq8wzaw",
+        "fJEZnaRrrQ-GCPoFI92OI"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "Up7R-kY47SBO9-XKF9yQq"
+        }
+      ],
+      "updated": 1720445862291,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "text",
+      "version": 156,
+      "versionNonce": 1415865943,
+      "isDeleted": false,
+      "id": "Up7R-kY47SBO9-XKF9yQq",
+      "fillStyle": "hachure",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 431.6585462824064,
+      "y": 749.5368694723434,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#e9ecef",
+      "width": 113.33172607421875,
+      "height": 93.49930063230222,
+      "seed": 1754800377,
+      "groupIds": [
+        "x3uShAKx_chx7QVq8wzaw",
+        "fJEZnaRrrQ-GCPoFI92OI"
+      ],
+      "frameId": null,
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1720445862291,
+      "link": null,
+      "locked": false,
+      "fontSize": 24.933146835280592,
+      "fontFamily": 1,
+      "text": "Menülogik\nUserinput\nParsing?",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "qCThJWCQ3g989UTRu8gs1",
+      "originalText": "Menülogik\nUserinput\nParsing?",
+      "lineHeight": 1.25,
+      "baseline": 84
+    },
+    {
+      "type": "rectangle",
+      "version": 186,
+      "versionNonce": 164856695,
+      "isDeleted": false,
+      "id": "afzrivOoi28nepAeYeL4v",
+      "fillStyle": "hachure",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 751.4641691658543,
+      "y": 588.9439281812628,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "width": 229.95096126134388,
+      "height": 121.49470891385435,
+      "seed": 1992006105,
+      "groupIds": [
+        "GI6hyEv1N5j8Mxsuld2rt",
+        "fJEZnaRrrQ-GCPoFI92OI"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "rbtj2RNXG7QLP46OmdmFD"
+        },
+        {
+          "id": "N6ncFQzKQC4uhwRlevNWe",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1720445862291,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "text",
+      "version": 189,
+      "versionNonce": 394547639,
+      "isDeleted": false,
+      "id": "rbtj2RNXG7QLP46OmdmFD",
+      "fillStyle": "hachure",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 781.0419752359793,
+      "y": 634.1080658661397,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "width": 170.79534912109375,
+      "height": 31.16643354410074,
+      "seed": 1740437177,
+      "groupIds": [
+        "GI6hyEv1N5j8Mxsuld2rt",
+        "fJEZnaRrrQ-GCPoFI92OI"
+      ],
+      "frameId": null,
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1720445862291,
+      "link": null,
+      "locked": false,
+      "fontSize": 24.933146835280592,
+      "fontFamily": 1,
+      "text": "class Expense",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "afzrivOoi28nepAeYeL4v",
+      "originalText": "class Expense",
+      "lineHeight": 1.25,
+      "baseline": 22
+    },
+    {
+      "type": "rectangle",
+      "version": 201,
+      "versionNonce": 1822360279,
+      "isDeleted": false,
+      "id": "dSNOMwRNU6nQ-K6ip1rDl",
+      "fillStyle": "hachure",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 744.9449408302422,
+      "y": 715.1810171810957,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#e9ecef",
+      "width": 247.13801764427924,
+      "height": 170.68524959604892,
+      "seed": 1849669529,
+      "groupIds": [
+        "GI6hyEv1N5j8Mxsuld2rt",
+        "fJEZnaRrrQ-GCPoFI92OI"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "7838TZvJmqI0y1Vp-1ktV"
+        }
+      ],
+      "updated": 1720445862291,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "text",
+      "version": 341,
+      "versionNonce": 1770426359,
+      "isDeleted": false,
+      "id": "7838TZvJmqI0y1Vp-1ktV",
+      "fillStyle": "hachure",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 759.2398560244521,
+      "y": 756.0001654875477,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#e9ecef",
+      "width": 218.54818725585938,
+      "height": 89.04695298314496,
+      "seed": 477584505,
+      "groupIds": [
+        "GI6hyEv1N5j8Mxsuld2rt",
+        "fJEZnaRrrQ-GCPoFI92OI"
+      ],
+      "frameId": null,
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1720445862291,
+      "link": null,
+      "locked": false,
+      "fontSize": 17.809390596628994,
+      "fontFamily": 1,
+      "text": "Datenstruktur \n(Eigenschaften)\nExpense-Funktionalität \n(Summierung, Darstellung)",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "dSNOMwRNU6nQ-K6ip1rDl",
+      "originalText": "Datenstruktur (Eigenschaften)\nExpense-Funktionalität (Summierung, Darstellung)",
+      "lineHeight": 1.25,
+      "baseline": 82
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
