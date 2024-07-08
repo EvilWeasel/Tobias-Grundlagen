@@ -104,6 +104,7 @@ namespace Aufgaben
     /// <param name="text"></param>
     internal static void PrintConsonantAndVowels(string text) 
     {
+      // string lowerText = text.ToLower();
       int vokalcount = 0, konsonantcount = 0;
       // Konzept: Prüfe auch Großbuchstaben, ohne diese extra in der Liste an charactern aufzunehmen
       string vokale = "aeiouäöü";
@@ -113,7 +114,7 @@ namespace Aufgaben
        int konsonantcount = 0;
        */
       // iteriere durch "text"
-      foreach(var character in text) 
+      foreach(var character in text.ToLower()) 
       {
         foreach (var vokal in vokale)
         {

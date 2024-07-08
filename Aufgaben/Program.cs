@@ -69,4 +69,4 @@ Console.WriteLine($"{countLastWord.Split(' ').Last()} is {countOfBenson}");
 Console.WriteLine(countLastWord.ToUpper());
 
 Console.WriteLine("---CountVokaleUndKonsonanten---");
-StringAufgaben.PrintConsonantAndVowels("buxtehude");
+StringAufgaben.PrintConsonantAndVowels("BUXtehUDe");
