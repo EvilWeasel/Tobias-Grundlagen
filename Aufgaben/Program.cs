@@ -66,3 +66,7 @@ Console.WriteLine();
 var countLastWord = "Barry B. Bensona";
 var countOfBenson = StringAufgaben.CountCharsOfLastWordInText(countLastWord);
 Console.WriteLine($"{countLastWord.Split(' ').Last()} is {countOfBenson}");
+Console.WriteLine(countLastWord.ToUpper());
+
+Console.WriteLine("---CountVokaleUndKonsonanten---");
+StringAufgaben.PrintConsonantAndVowels("buxtehude");

@@ -102,7 +102,43 @@ namespace Aufgaben
     /// HINT: Sind Leerzeichen Vokale oder Konsonanten?
     /// </summary>
     /// <param name="text"></param>
-    internal static void PrintConsonantAndVowels(string text) { }
+    internal static void PrintConsonantAndVowels(string text) 
+    {
+      int vokalcount = 0, konsonantcount = 0;
+      // Konzept: Prüfe auch Großbuchstaben, ohne diese extra in der Liste an charactern aufzunehmen
+      string vokale = "aeiouäöü";
+      string konsonanten = "bcdfghjklmnpqrstvwxyz";
+      /*
+       int vokalcount = 0;
+       int konsonantcount = 0;
+       */
+      // iteriere durch "text"
+      foreach(var character in text) 
+      {
+        foreach (var vokal in vokale)
+        {
+          // prüfe ob vokal -> vokalcount
+          if (character == vokal)
+          {
+            vokalcount++;
+            break;
+          }
+        }
+        foreach (var konsonant in konsonanten)
+        {
+          // prüfe ob konsonant -> konsonantcount++
+          if (character == konsonant)
+          {
+            konsonantcount++;
+            break;
+          }
+        }
+      }
+      // gebe vokal- und konsonantencount aus
+      Console.WriteLine($"Dein Text {text} hat folgende Zeichen:");
+      Console.WriteLine($"\tAnzahl Vokale: {vokalcount}");
+      Console.WriteLine($"\tAnzahl Konsonanten: {konsonantcount}");
+    }
 
   }
 }
