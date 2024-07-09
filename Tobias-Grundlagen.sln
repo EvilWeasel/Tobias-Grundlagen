@@ -34,6 +34,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpensesTracker", "Expenses
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buchverwaltungssystem", "Buchverwaltungssystem\Buchverwaltungssystem.csproj", "{A47DF95D-D127-4B27-A2F6-D96AD2B82DD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fahrzeugverwaltungssystem", "Fahrzeugverwaltungssystem\Fahrzeugverwaltungssystem.csproj", "{CD026AF2-1E28-4916-8BCC-302336884927}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -92,6 +94,10 @@ Global
 		{A47DF95D-D127-4B27-A2F6-D96AD2B82DD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A47DF95D-D127-4B27-A2F6-D96AD2B82DD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A47DF95D-D127-4B27-A2F6-D96AD2B82DD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD026AF2-1E28-4916-8BCC-302336884927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD026AF2-1E28-4916-8BCC-302336884927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD026AF2-1E28-4916-8BCC-302336884927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD026AF2-1E28-4916-8BCC-302336884927}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

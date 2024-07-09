@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aufgaben
 {
-  
+
   internal static class Sammlungen
   {
     // FindIndex Optimized
@@ -15,14 +15,15 @@ namespace Aufgaben
       var low = 0;
       var high = numbers.Count - 1; // Der höchste Index
       int mid = 0;
-      while(high >= low)
+      while (high >= low)
       {
         mid = (high + low) / 2;
         if (numbers[mid] == query) return mid;
         else if (numbers[mid] < query)
         {
           low = mid + 1;
-        } else
+        }
+        else
         {
           high = mid - 1;
         }
@@ -30,7 +31,7 @@ namespace Aufgaben
       // if (numbers[mid] == query) return mid;
       return -1;
     }
-      /// <summary>
+    /// <summary>
     /// Eine Funktion, welche eine Sammlung und ein gesuchtes Element übergeben bekommt,
     /// und den entsprechenden Index des El ements im Array zurück gibt.
     /// </summary>
@@ -59,10 +60,10 @@ namespace Aufgaben
       return -1;
     }
 
-    internal static List<int> GenerateNumbers(int amount) 
+    internal static List<int> GenerateNumbers(int amount)
     {
       List<int> numbers = new();
-      for (int i = 0; i < amount; i++) 
+      for (int i = 0; i < amount; i++)
         numbers.Add(i);
       return numbers;
     }
@@ -72,7 +73,7 @@ namespace Aufgaben
     /// die Häufigkeit jedes Elements druckt.
     /// Beispiel
     /// Input: [1,2,3,3,5,2,-10,-10]
-    /// 
+    ///
     /// Output:
     /// Zahl 1: 1
     /// Zahl 2: 2
@@ -80,7 +81,7 @@ namespace Aufgaben
     /// Zahl 5: 1
     /// Zahl -10: 2
     /// </summary>
-    internal static void GroupBy(List<int> numbers) 
+    internal static void GroupBy(List<int> numbers)
     {
       /*
       Dictionary<int, int> dict = new();
@@ -113,7 +114,7 @@ namespace Aufgaben
     /// <summary>
     /// Eine Funktion, welche einen Weihnachtsbaum in der Konsole druckt.
     /// Input: Wie gewünscht
-    /// Output (Console.WriteLine()): 
+    /// Output (Console.WriteLine()):
     ///    #
     ///   ###
     ///  #####
@@ -121,7 +122,7 @@ namespace Aufgaben
     ///    #
     /// BaumBauer();
     /// </summary>
-    internal static void BaumBauer(int height = 5) 
+    internal static void BaumBauer(int height = 5)
     {
       /*
       Console.WriteLine("   #");
@@ -175,7 +176,7 @@ namespace Aufgaben
     /// <summary>
     /// Eine Funktion, welche einen Diamanten in der Konsole druckt.
     /// Input: Wie gewünscht
-    /// Output (Console.WriteLine()): 
+    /// Output (Console.WriteLine()):
     ///    #
     ///   ###
     ///  #####
@@ -192,10 +193,10 @@ namespace Aufgaben
     /// </summary>
     /// <param name="numbers"></param>
     /// <returns>Der niedrigste Wert, aus dem gegebenen Array</returns>
-    internal static int FindSmallestValue(int[] numbers) 
+    internal static int FindSmallestValue(int[] numbers)
     {
       int minimum = numbers[0];
-      foreach(int number in numbers)
+      foreach (int number in numbers)
         if (number < minimum)
           minimum = number;
       return minimum;
@@ -208,11 +209,11 @@ namespace Aufgaben
     /// </summary>
     /// <param name="numbers"></param>
     /// <returns></returns>
-    internal static List<int> OnlyEven(List<int> numbers) 
+    internal static List<int> OnlyEven(List<int> numbers)
     {
       List<int> evenNumbers = new();
-      foreach(int number in numbers)
-        if(number % 2 == 0)
+      foreach (int number in numbers)
+        if (number % 2 == 0)
           evenNumbers.Add(number);
       return evenNumbers;
     }
@@ -237,7 +238,7 @@ namespace Aufgaben
     /// </summary>
     /// <param name="numbers"></param>
     /// <returns></returns>
-    internal static bool ContainsDuplicates(int[] numbers) { return false;  }
+    internal static bool ContainsDuplicates(int[] numbers) { return false; }
 
   }
 }
