@@ -32,7 +32,7 @@
     // Methode => Eine Aktion, welche mein Objekt tätigen kann
     internal void Greet(string greeting)
     {
-      Console.WriteLine(Vorname + " " + Nachname + " Begrüßt dich mit: " + greeting);
+      Console.WriteLine(this.Vorname + " " + Nachname + " Begrüßt dich mit: " + greeting);
     }
 
     /// <summary>

@@ -30,7 +30,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpensesTracker", "ExpensesTracker\ExpensesTracker.csproj", "{608C69C3-C9CC-440D-B1AB-5F545DF71735}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpensesTracker", "ExpensesTracker\ExpensesTracker.csproj", "{608C69C3-C9CC-440D-B1AB-5F545DF71735}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buchverwaltungssystem", "Buchverwaltungssystem\Buchverwaltungssystem.csproj", "{A47DF95D-D127-4B27-A2F6-D96AD2B82DD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -86,6 +88,10 @@ Global
 		{608C69C3-C9CC-440D-B1AB-5F545DF71735}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{608C69C3-C9CC-440D-B1AB-5F545DF71735}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{608C69C3-C9CC-440D-B1AB-5F545DF71735}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A47DF95D-D127-4B27-A2F6-D96AD2B82DD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A47DF95D-D127-4B27-A2F6-D96AD2B82DD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A47DF95D-D127-4B27-A2F6-D96AD2B82DD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A47DF95D-D127-4B27-A2F6-D96AD2B82DD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

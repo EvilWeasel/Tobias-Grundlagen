@@ -1,6 +1,6 @@
 ﻿using Concepts;
 
-var stringtest = "buxtehude";
+string stringtest = "buxtehude";
 Person person1 = new Person("Michael", "Lutz"); // Konstruktoraufruf
 // var personPseudoKonstruktor = Person.Konstruktor("Michael", "Lutz");
 
@@ -26,4 +26,21 @@ List<DateTime> times;
 Console.WriteLine(people);
 */
 
+Test test = new Test("Buxtehude");
 
+/// <summary>
+/// Wenn wir in Program.Main eine Klasse definieren, dann muss diese nach dem direkt ausführbaren Code folgen.
+/// </summary>
+public class Test
+{
+  public string Name { get; set; }
+
+  public Test(string name)
+  {
+    Name = name;
+  }
+  public void Greet()
+  {
+    Console.WriteLine(Name);
+  }
+}
