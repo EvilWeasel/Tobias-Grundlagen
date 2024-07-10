@@ -38,6 +38,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fahrzeugverwaltungssystem",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aufgabenverwaltungssystem", "Aufgabenverwaltungssystem\Aufgabenverwaltungssystem.csproj", "{5237ADED-82AD-4858-9BAF-82637F9BF173}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticVSInstance", "StaticVSInstance\StaticVSInstance.csproj", "{3001B4E5-14FA-4BC6-A187-1495607F7AB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -104,6 +106,10 @@ Global
 		{5237ADED-82AD-4858-9BAF-82637F9BF173}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5237ADED-82AD-4858-9BAF-82637F9BF173}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5237ADED-82AD-4858-9BAF-82637F9BF173}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3001B4E5-14FA-4BC6-A187-1495607F7AB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3001B4E5-14FA-4BC6-A187-1495607F7AB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3001B4E5-14FA-4BC6-A187-1495607F7AB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3001B4E5-14FA-4BC6-A187-1495607F7AB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
