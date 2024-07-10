@@ -1,6 +1,27 @@
-﻿int numberInput1 = 0;
+﻿using StaticVSInstance;
+
+int numberInput1 = 0;
 int numberInput2 = 0;
 int result = 0;
+
+// Wenn wir die Methoden des Taschenrechners statisch machen, müssen wir keine Instanz (Objekt) der Klasse Calculator (eg. var calc = new Calculator()) erstellen.
+/*
+Calculator calculator = new Calculator();
+calculator.Title = "Mein cooler Taschenrechner";
+Calculator.Title = "Geht nicht, weil keine Instanz.";
+calculator.Count = "Gibt es nicht auf der Instanz...";
+Calculator.Count = 10;
+
+calculator.Add(10,20);
+
+Calculator calculator1 = new Calculator();
+calculator1.Add(20, 30);
+
+Calculator calc1 = new Calculator();
+Calculator calcSubtract = new Calculator();
+
+*/
+
 do
 {
   Console.Clear();
@@ -10,46 +31,29 @@ do
   switch (menuInput)
   {
     case "1":
-      Console.Write("Gebe die erste Zahl ein:\t");
-      numberInput1 = int.Parse(Console.ReadLine());
-      Console.Write("Gebe die zweite Zahl ein:\t");
-      numberInput2 = int.Parse(Console.ReadLine());
+      //Calculator.
+      numberInput1 = Calculator.GetNumberInput("Gebe die erste Zahl ein: ");
+      numberInput2 = Calculator.GetNumberInput("Gebe die zweite Zahl ein: ");
       // var numberInput1 = Calculator.GetInput();
-      result = numberInput1 + numberInput2;
-      Console.WriteLine($"Das Ergebnis von {numberInput1} + {numberInput2} = {result}");
-      Console.WriteLine("Drücke irgendwas für eine neue Berechnung");
-      Console.ReadKey();
+      Calculator.Add(numberInput1, numberInput2);
       break;
     case "2":
-      Console.Write("Gebe die erste Zahl ein:\t");
-      numberInput1 = int.Parse(Console.ReadLine());
-      Console.Write("Gebe die zweite Zahl ein:\t");
-      numberInput2 = int.Parse(Console.ReadLine());
-      result = numberInput1 - numberInput2;
-      Console.WriteLine($"Das Ergebnis von {numberInput1} - {numberInput2} = {result}");
-      Console.WriteLine("Drücke irgendwas für eine neue Berechnung");
-      Console.ReadKey();
+      numberInput1 = Calculator.GetNumberInput("Gebe die erste Zahl ein: ");
+      numberInput2 = Calculator.GetNumberInput("Gebe die zweite Zahl ein: ");
+      Calculator.Subtract(numberInput1, numberInput2);
       break;
     case "3":
-      Console.Write("Gebe die erste Zahl ein:\t");
-      numberInput1 = int.Parse(Console.ReadLine());
-      Console.Write("Gebe die zweite Zahl ein:\t");
-      numberInput2 = int.Parse(Console.ReadLine());
-      result = numberInput1 * numberInput2;
-      Console.WriteLine($"Das Ergebnis von {numberInput1} * {numberInput2} = {result}");
-      Console.WriteLine("Drücke irgendwas für eine neue Berechnung");
-      Console.ReadKey();
+      numberInput1 = Calculator.GetNumberInput("Gebe die erste Zahl ein: ");
+      numberInput2 = Calculator.GetNumberInput("Gebe die zweite Zahl ein: ");
+      Calculator.Multiply(numberInput1, numberInput2);
       break;
     case "4":
-      Console.Write("Gebe die erste Zahl ein:\t");
-      numberInput1 = int.Parse(Console.ReadLine());
-      Console.Write("Gebe die zweite Zahl ein:\t");
-      numberInput2 = int.Parse(Console.ReadLine());
-      result = numberInput1 / numberInput2;
-      Console.WriteLine($"Das Ergebnis von {numberInput1} / {numberInput2} = {result}");
-      Console.WriteLine("Drücke irgendwas für eine neue Berechnung");
-      Console.ReadKey();
+      numberInput1 = Calculator.GetNumberInput("Gebe die erste Zahl ein: ");
+      numberInput2 = Calculator.GetNumberInput("Gebe die zweite Zahl ein: ");
+      Calculator.Divide(numberInput1, numberInput2);
       break;
   }
+
 } while (true);
 
+// void test() { } // Program.test() // auch eine Methode, weil gehört zur Program-Klasse
