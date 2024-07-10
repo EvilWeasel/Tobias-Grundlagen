@@ -63,7 +63,7 @@ Alice und Bob betreiben ein Autohaus und möchten ein einfaches Fahrzeugverwaltu
 ### Aufgabe: Aufgabenverwaltungssystem
 
 **Szenario:**
-Alice und Bob arbeiten an mehreren Projekten und benötigen ein Aufgabenverwaltungssystem, um den Überblick über ihre Aufgaben zu behalten. Sie brauchen eine Klasse `Task`, die grundlegende Informationen über eine Aufgabe speichert und mehrere Methoden bietet, um den Status der Aufgabe zu verwalten.
+Alice und Bob arbeiten an mehreren Projekten und benötigen ein Aufgabenverwaltungssystem, um den Überblick über ihre Aufgaben zu behalten. Sie brauchen eine Klasse `Tasky`, die grundlegende Informationen über eine Aufgabe speichert und mehrere Methoden bietet, um den Status der Aufgabe zu verwalten.
 
 **Hinweis:**
 Diese Aufgabe ist etwas anderst als die vorherigen. Hier bekommt ihr von mir die Program.Main Methode, sowie eine unvollständige Klasse vorgegeben. Eure Aufgabe ist es, ein neues C#-Projekt zu erstellen (Name: "Taskmaster"), die gegebene unvollständige Klasse zu vervollständigen (Eigenschaften, Methoden, Konstruktor) und mit meinem gegebenen Code die Klasse zu Testen.
@@ -85,7 +85,7 @@ Diese Aufgabe ist etwas anderst als die vorherigen. Hier bekommt ihr von mir die
     - Erstelle eine Methode `ExtendDueDate`, die ein neues Fälligkeitsdatum (DateTime) als Parameter erhält und das Fälligkeitsdatum der Aufgabe entsprechend aktualisiert.
 
 3. **Testen:**
-    - Erstelle mehrere Instanzen der Klasse `Task` und rufe die Methoden `GetTaskInfo`, `CompleteTask` und `ExtendDueDate` für jede Instanz auf.
+    - Erstelle mehrere Instanzen der Klasse `Tasky` und rufe die Methoden `GetTaskInfo`, `CompleteTask` und `ExtendDueDate` für jede Instanz auf.
     - Gib die Ergebnisse in der Konsole aus.
 
 **Gegebener Code:**
@@ -96,8 +96,8 @@ class Program
     static void Main(string[] args)
     {
         // Erstelle mehrere Aufgabenobjekte
-        Task task1 = new Task("Dokumentation schreiben", "Schreibe die Projektdokumentation bis zum Ende der Woche", new DateTime(2024, 7, 7));
-        Task task2 = new Task("Code-Review durchführen", "Überprüfe den Code des neuen Features", new DateTime(2024, 7, 5));
+        Tasky task1 = new Tasky("Dokumentation schreiben", "Schreibe die Projektdokumentation bis zum Ende der Woche", new DateTime(2024, 7, 7));
+        Tasky task2 = new Tasky("Code-Review durchführen", "Überprüfe den Code des neuen Features", new DateTime(2024, 7, 5));
 
         // Rufe die Beschreibungen ab und gib sie aus
         Console.WriteLine(task1.GetTaskInfo());
@@ -112,7 +112,7 @@ class Program
         Console.WriteLine(task2.GetTaskInfo());
     }
 }
-public class Task
+public class Tasky
 {
     // Eigenschaften kommen hier hin:
 
