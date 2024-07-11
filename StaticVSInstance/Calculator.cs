@@ -4,42 +4,50 @@
   {
     /* Properties
     public string Title { get; set; }
-    public int InstanceCount { get; set; }
+    public double InstanceCount { get; set; }
     public string Title { get; set; }
     */
-    public static int Count { get; set; }
+    public static double Count { get; set; }
 
     // Methoden
-    public static int GetNumberInput(string inputPrompt) // Funktionssignatur -> Methodensignatur
+    public static double GetNumberInput(string inputPrompt) // Funktionssignatur -> Methodensignatur
     { // Function-Body -> Funktionskörper
       Console.Write(inputPrompt);
-      return int.Parse(Console.ReadLine());
+      return double.Parse(Console.ReadLine());
     }
 
     /* Calculate()
     Refactoring -> Umschreiben vom Code zum Verbessern der Performance, Lesbarkeit oder auch Wartbarkeit */
-    public static int Calculate(int numberInput1, int numberInput2, Operator op) 
+    public static double Calculate(double[] numberInputs, Operator op) 
     {
-      int result = 0;
+      double result = 0;
       Count++;
       Console.ForegroundColor = ConsoleColor.Magenta;
       switch (op)
       {
         case Operator.Add:
-          result = numberInput1 + numberInput2;
-          Console.WriteLine($"Das Ergebnis von {numberInput1} + {numberInput2} = {result}");
+          result = numberInputs[0] + numberInputs[1];
+          Console.WriteLine($"Das Ergebnis von {numberInputs[0]} + {numberInputs[1]} = {result}");
           break;
         case Operator.Subtract:
-          result = numberInput1 - numberInput2;
-          Console.WriteLine($"Das Ergebnis von {numberInput1} - {numberInput2} = {result}");
+          result = numberInputs[0] - numberInputs[1];
+          Console.WriteLine($"Das Ergebnis von {numberInputs[0]} - {numberInputs[1]} = {result}");
           break;
         case Operator.Multiply:
-          result = numberInput1 * numberInput2;
-          Console.WriteLine($"Das Ergebnis von {numberInput1} * {numberInput2} = {result}");
+          result = numberInputs[0] * numberInputs[1];
+          Console.WriteLine($"Das Ergebnis von {numberInputs[0]} * {numberInputs[1]} = {result}");
           break;
         case Operator.Divide:
-          result = numberInput1 / numberInput2;
-          Console.WriteLine($"Das Ergebnis von {numberInput1} / {numberInput2} = {result}");
+          result = numberInputs[0] / numberInputs[1];
+          Console.WriteLine($"Das Ergebnis von {numberInputs[0]} / {numberInputs[1]} = {result}");
+          break;
+        case Operator.AreaTriangle:
+          result = AreaTriangle(numberInputs[0], numberInputs[1]);
+          Console.WriteLine($"Das Dreieck {numberInputs.ToString()} ist {result} groß.");
+          break;
+        case Operator.CircumferenceTriangle:
+          result = CircumferenceTriangle(numberInputs[0], numberInputs[1], numberInputs[2]);
+          Console.WriteLine($"Die Fläche des Dreiecks {numberInputs.ToString()} ist {result} groß.");
           break;
       }
       Console.ResetColor();
@@ -49,7 +57,16 @@
       return result;
     }
 
-    public static int Add(int numberInput1, int numberInput2)
+    public static double AreaTriangle(double baseLength, double height)
+    {
+      return 0.5 * baseLength * height;
+    }
+    public static double CircumferenceTriangle(double a, double b, double c)
+    {
+      return a + b + c;
+    }
+
+    public static double Add(double numberInput1, double numberInput2)
     {
       Count++;
       var result = numberInput1 + numberInput2;
@@ -60,7 +77,7 @@
       return result;
     }
 
-    public static int Subtract(int numberInput1, int numberInput2) 
+    public static double Subtract(double numberInput1, double numberInput2) 
     {
       Count++;
       var result = numberInput1 - numberInput2;
@@ -71,7 +88,7 @@
       return result;
     }
 
-    public static int Multiply(int numberInput1, int numberInput2)
+    public static double Multiply(double numberInput1, double numberInput2)
     {
       Count++;
       var result = numberInput1 * numberInput2;
@@ -82,7 +99,7 @@
       return result;
     }
 
-    public static int Divide(int numberInput1, int numberInput2)
+    public static double Divide(double numberInput1, double numberInput2)
     {
       Count++;
       var result = numberInput1 / numberInput2;
@@ -113,8 +130,10 @@
   public enum Operator
   {
     Add = 1,
-    Subtract = 2,
-    Multiply = 3,
-    Divide = 4,
+    Subtract,
+    Multiply,
+    Divide,
+    AreaTriangle,
+    CircumferenceTriangle
   }
 }

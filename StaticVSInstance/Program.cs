@@ -1,8 +1,6 @@
 ﻿using StaticVSInstance;
-
-int numberInput1 = 0;
-int numberInput2 = 0;
-int result = 0;
+double[] numberInputs = new double[3];
+double result = 0;
 /*
 
 Calculator c = new Calculator();
@@ -45,10 +43,10 @@ do
 {
   Console.Clear();
   Console.WriteLine("Was willst du rechnen?");
-  Console.WriteLine("\t1.Add\n\t2.Subtract\n\t3.Multiply\n\t4.Divide");
+  Console.WriteLine("\t1.Add\n\t2.Subtract\n\t3.Multiply\n\t4.Divide\n\t5.Triangle Area\n\t6.Triangle Circumference");
   var menuInput = Console.ReadLine();
-  numberInput1 = Calculator.GetNumberInput("Gebe die erste Zahl ein: ");
-  numberInput2 = Calculator.GetNumberInput("Gebe die zweite Zahl ein: ");
+  numberInputs[0] = Calculator.GetNumberInput("Gebe die erste Zahl ein: ");
+  numberInputs[1] = Calculator.GetNumberInput("Gebe die zweite Zahl ein: ");
   int menuInputIndex = int.Parse(menuInput);
   Operator op = (Operator)menuInputIndex;
   switch (op)
@@ -56,16 +54,23 @@ do
     case Operator.Add:
       //Calculator.
       // var numberInput1 = Calculator.GetInput();
-      Calculator.Calculate(numberInput1, numberInput2, Operator.Add);
+      Calculator.Calculate(numberInputs, Operator.Add);
       break;
     case Operator.Subtract:
-      Calculator.Calculate(numberInput1, numberInput2, Operator.Subtract);
+      Calculator.Calculate(numberInputs, Operator.Subtract);
       break;
     case Operator.Multiply:
-      Calculator.Calculate(numberInput1, numberInput2, Operator.Multiply);
+      Calculator.Calculate(numberInputs, Operator.Multiply);
       break;
     case Operator.Divide:
-      Calculator.Calculate(numberInput1, numberInput2, Operator.Divide);
+      Calculator.Calculate(numberInputs, Operator.Divide);
+      break;
+    case Operator.AreaTriangle:
+      Calculator.Calculate(numberInputs, Operator.AreaTriangle);
+      break;
+    case Operator.CircumferenceTriangle:
+      numberInputs[2] = Calculator.GetNumberInput("Gebe die dritte Zahl ein: ");
+      Calculator.Calculate(numberInputs, Operator.CircumferenceTriangle);
       break;
   }
 
