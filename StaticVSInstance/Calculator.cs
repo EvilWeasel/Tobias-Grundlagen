@@ -2,11 +2,12 @@
 {
   public static class Calculator
   {
-    // Properties
-    // public string Title { get; set; }
-    // public int InstanceCount { get; set; }
+    /* Properties
+    public string Title { get; set; }
+    public int InstanceCount { get; set; }
+    public string Title { get; set; }
+    */
     public static int Count { get; set; }
-    // public string Title { get; set; }
 
     // Methoden
     public static int GetNumberInput(string inputPrompt) // Funktionssignatur -> Methodensignatur
@@ -15,32 +16,33 @@
       return int.Parse(Console.ReadLine());
     }
 
-    // Calculate()
-    // Refactoring -> Umschreiben vom Code zum Verbessern der Performance, Lesbarkeit oder auch Wartbarkeit
-    public static int Calculate(int numberInput1, int numberInput2, string op) 
+    /* Calculate()
+    Refactoring -> Umschreiben vom Code zum Verbessern der Performance, Lesbarkeit oder auch Wartbarkeit */
+    public static int Calculate(int numberInput1, int numberInput2, Operator op) 
     {
       int result = 0;
       Count++;
-      if (op == "+")
+      Console.ForegroundColor = ConsoleColor.Magenta;
+      switch (op)
       {
-        result = numberInput1 + numberInput2;
-        Console.WriteLine($"Das Ergebnis von {numberInput1} + {numberInput2} = {result}");
+        case Operator.Add:
+          result = numberInput1 + numberInput2;
+          Console.WriteLine($"Das Ergebnis von {numberInput1} + {numberInput2} = {result}");
+          break;
+        case Operator.Subtract:
+          result = numberInput1 - numberInput2;
+          Console.WriteLine($"Das Ergebnis von {numberInput1} - {numberInput2} = {result}");
+          break;
+        case Operator.Multiply:
+          result = numberInput1 * numberInput2;
+          Console.WriteLine($"Das Ergebnis von {numberInput1} * {numberInput2} = {result}");
+          break;
+        case Operator.Divide:
+          result = numberInput1 / numberInput2;
+          Console.WriteLine($"Das Ergebnis von {numberInput1} / {numberInput2} = {result}");
+          break;
       }
-      else if (op == "-")
-      {
-        result = numberInput1 - numberInput2;
-        Console.WriteLine($"Das Ergebnis von {numberInput1} - {numberInput2} = {result}");
-      }
-      else if (op == "*") 
-      {
-        result = numberInput1 * numberInput2;
-        Console.WriteLine($"Das Ergebnis von {numberInput1} * {numberInput2} = {result}");
-      } else
-      {
-        result = numberInput1 / numberInput2;
-        Console.WriteLine($"Das Ergebnis von {numberInput1} / {numberInput2} = {result}");
-      }
-
+      Console.ResetColor();
       Console.WriteLine($"Du hast {Count} Berechnungen getätigt.");
       Console.WriteLine("Drücke irgendwas für eine neue Berechnung");
       Console.ReadKey();
@@ -105,5 +107,14 @@
       return result;
     }
     */
+
+
+  }
+  public enum Operator
+  {
+    Add = 1,
+    Subtract = 2,
+    Multiply = 3,
+    Divide = 4,
   }
 }

@@ -49,21 +49,23 @@ do
   var menuInput = Console.ReadLine();
   numberInput1 = Calculator.GetNumberInput("Gebe die erste Zahl ein: ");
   numberInput2 = Calculator.GetNumberInput("Gebe die zweite Zahl ein: ");
-  switch (menuInput)
+  int menuInputIndex = int.Parse(menuInput);
+  Operator op = (Operator)menuInputIndex;
+  switch (op)
   {
-    case "1":
+    case Operator.Add:
       //Calculator.
       // var numberInput1 = Calculator.GetInput();
-      Calculator.Calculate(numberInput1, numberInput2, "+");
+      Calculator.Calculate(numberInput1, numberInput2, Operator.Add);
       break;
-    case "2":
-      Calculator.Calculate(numberInput1, numberInput2, "-");
+    case Operator.Subtract:
+      Calculator.Calculate(numberInput1, numberInput2, Operator.Subtract);
       break;
-    case "3":
-      Calculator.Calculate(numberInput1, numberInput2, "*");
+    case Operator.Multiply:
+      Calculator.Calculate(numberInput1, numberInput2, Operator.Multiply);
       break;
-    case "4":
-      Calculator.Calculate(numberInput1, numberInput2, "/");
+    case Operator.Divide:
+      Calculator.Calculate(numberInput1, numberInput2, Operator.Divide);
       break;
   }
 
