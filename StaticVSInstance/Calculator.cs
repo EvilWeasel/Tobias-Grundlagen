@@ -16,6 +16,16 @@
       return int.Parse(Console.ReadLine());
     }
 
+    public static void PrintMenu(List<string> menuItems) 
+    {
+      Console.Clear();
+      Console.WriteLine("Was willst du rechnen?");
+      for (int i = 0; i < menuItems.Count; i++) 
+      {
+        Console.WriteLine($"\t{i + 1}. {menuItems[i]}");
+      }
+    }
+
     /* Calculate()
     Refactoring -> Umschreiben vom Code zum Verbessern der Performance, Lesbarkeit oder auch Wartbarkeit */
     public static double Calculate(List<double> numberInputs, Operator op) 
@@ -49,6 +59,22 @@
           result = TriangleCircumference(numberInputs[0], numberInputs[1], numberInputs[2]);
           Console.WriteLine($"Der Umfang des Dreiecks [{numberInputs[0]}, {numberInputs[1]}, {numberInputs[2]}] ist {result} groß.");
           break;
+        case Operator.CircleArea:
+          result = CircleArea(numberInputs[0]);
+          Console.WriteLine($"Die Fläche des Kreises mit Radius {numberInputs[0]} ist {result} groß.");
+          break;
+        case Operator.CircleCircumference:
+          result = CircleArea(numberInputs[0]);
+          Console.WriteLine($"Der Umfang des Kreises mit Radius {numberInputs[0]} ist {result} groß.");
+          break;
+        case Operator.RectangleArea:
+          result = RectangleArea(numberInputs[0], numberInputs[1]);
+          Console.WriteLine($"Die Fläche des Rechtecks mit den Kanten [{numberInputs[0]}, {numberInputs[1]}] ist {result} groß.");
+          break;
+        case Operator.RectangleCircumference:
+          result = RectangleCircumference(numberInputs[0], numberInputs[1]);
+          Console.WriteLine($"Der Umfang des Rechtecks mit den Kanten [{numberInputs[0]}, {numberInputs[1]}] ist {result} groß.");
+          break;
       }
       Console.ResetColor();
       Console.WriteLine($"Du hast {Count} Berechnungen getätigt.");
@@ -61,6 +87,14 @@
       => (baseSide * height) / 2; // == 0.5 * base * height
 
     public static double TriangleCircumference(double a, double b, double c) => a + b + c;
+
+    public static double CircleArea(double radius) => Math.PI * radius * radius;
+
+    public static double CircleCircumference(double radius) => 2 * Math.PI * radius;
+
+    public static double RectangleArea(double a, double b) => a * b;
+
+    public static double RectangleCircumference(double a, double b) => (2 * a) + (2 * b); // 2 * (a + b)
 
     /*
     public static int Add(int numberInput1, int numberInput2)

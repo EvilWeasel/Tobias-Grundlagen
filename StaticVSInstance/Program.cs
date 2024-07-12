@@ -1,5 +1,19 @@
 ﻿using StaticVSInstance;
 
+List<string> menuItems = new() 
+{
+  "Add",
+  "Subtract",
+  "Multiply",
+  "Divide",
+  "Dreieck Fläche",
+  "Dreieck Umfang",
+  "Kreis Fläche",
+  "Kreis Umfang",
+  "Rechteck Fläche",
+  "Rechteck Umfang",
+};
+
 List<double> numberInputs = new();
 double result = 0;
 /*
@@ -43,13 +57,10 @@ var parsed = int.Parse("1");
 do
 {
   numberInputs.Clear();
-  Console.Clear();
-  Console.WriteLine("Was willst du rechnen?");
-  Console.WriteLine("\t1.Add\n\t2.Subtract\n\t3.Multiply\n\t4.Divide\n\t5.Triangle Area\n\t6.Triagnle Circumference");
+  Calculator.PrintMenu(menuItems);
   var menuInput = Console.ReadLine();
   // numberInputs[10] = Calculator.GetNumberInput("Gebe die erste Zahl ein: "); geht nicht, weil nicht initialisiert. liste ist append only
   numberInputs.Add(Calculator.GetNumberInput("Gebe die erste Zahl ein: "));
-  numberInputs.Add(Calculator.GetNumberInput("Gebe die zweite Zahl ein: "));
   int menuInputIndex = int.Parse(menuInput);
   Operator op = (Operator)menuInputIndex;
   switch (op)
@@ -57,23 +68,43 @@ do
     case Operator.Add:
       //Calculator.
       // var numberInput1 = Calculator.GetInput();
+      numberInputs.Add(Calculator.GetNumberInput("Gebe die zweite Zahl ein: "));
       Calculator.Calculate(numberInputs, Operator.Add);
       break;
     case Operator.Subtract:
+      numberInputs.Add(Calculator.GetNumberInput("Gebe die zweite Zahl ein: "));
       Calculator.Calculate(numberInputs, Operator.Subtract);
       break;
     case Operator.Multiply:
+      numberInputs.Add(Calculator.GetNumberInput("Gebe die zweite Zahl ein: "));
       Calculator.Calculate(numberInputs, Operator.Multiply);
       break;
     case Operator.Divide:
+      numberInputs.Add(Calculator.GetNumberInput("Gebe die zweite Zahl ein: "));
       Calculator.Calculate(numberInputs, Operator.Divide);
       break;
     case Operator.TriangleArea:
+      numberInputs.Add(Calculator.GetNumberInput("Gebe die zweite Zahl ein: "));
       Calculator.Calculate(numberInputs, Operator.TriangleArea);
       break;
     case Operator.TriangleCircumference:
+      numberInputs.Add(Calculator.GetNumberInput("Gebe die zweite Zahl ein: "));
       numberInputs.Add(Calculator.GetNumberInput("Gebe die dritte Zahl ein: "));
       Calculator.Calculate(numberInputs, Operator.TriangleCircumference);
+      break;
+    case Operator.CircleArea:
+      Calculator.Calculate(numberInputs, Operator.CircleArea);
+      break;
+    case Operator.CircleCircumference:
+      Calculator.Calculate(numberInputs, Operator.CircleCircumference);
+      break;
+    case Operator.RectangleArea:
+      numberInputs.Add(Calculator.GetNumberInput("Gebe die zweite Zahl ein: "));
+      Calculator.Calculate(numberInputs, Operator.RectangleArea);
+      break;
+    case Operator.RectangleCircumference:
+      numberInputs.Add(Calculator.GetNumberInput("Gebe die zweite Zahl ein: "));
+      Calculator.Calculate(numberInputs, Operator.RectangleCircumference);
       break;
   }
 
