@@ -26,7 +26,7 @@
 
 // Erstelle eine Funktion, für die Ausgabelogik der Liste
 
-List<string> todos = new();
+using TD;
 
 int getIndex(string prompt) // Funktionssignatur
 {
@@ -39,16 +39,16 @@ int getIndex(string prompt) // Funktionssignatur
 void printTodos()
 {
   // Wenn nur eine einzige Anweisung auf ein if-/else Statement folgt, kann man die curly-braces {} weglassen
-  if (todos.Count >= 2)
+  if (Todo.Todos.Count >= 2)
     Console.WriteLine("Du hast folgende Aufgaben:");
-  else if (todos.Count == 0)
+  else if (Todo.Todos.Count == 0)
     Console.WriteLine("Du hast keine Aufgaben. Feierabend?:");
   else
     Console.WriteLine("Du hast folgende Aufgabe:");
 
-  for (int i = 0; i < todos.Count; i++)
+  for (int i = 0; i < Todo.Todos.Count; i++)
   {
-    Console.WriteLine($"\t{i}. {todos[i]}");
+    Console.WriteLine($"{i}. {Todo.Todos[i]}");
   }
 }
 
@@ -62,29 +62,33 @@ void showTodos()
 // Menü anzeigen mit Optionen
 Console.WriteLine("Willkommen bei TD!");
 
+Todo.DeserializeAll();
 
 // Console.WriteLine(todos.Count); // Ausgabe ist die Kapazität, also 20
 
 // das hier ist aktuell noch null!!!
 // Console.WriteLine(todos[9]);
-
+// "Buxtehude", 12-7-24, false
+// "buxtehude2", 12-7-24, false
 do
 {
   Console.Clear();
   Console.WriteLine("Was möchtest du tun?");
   Console.WriteLine("\t1. Neues Todo erstellen\n\t2. Todos anzeigen\n\t3. Todo abhacken\n\t4. Todo überschreiben");
-  var input = Console.ReadLine();
+  var menuInput = Console.ReadLine();
 
-  switch (input)
+  switch (menuInput)
   {
     case "1":
       Console.WriteLine("Was hast du zu tun? <Enter zum bestätigen>");
-      var todo = Console.ReadLine();
+      var todoInput = Console.ReadLine();
 
       // Fügen wir das Todo hinzu
-      todos.Add(todo);
-      Console.WriteLine("Todo hinzugefügt: " + todo);
+      Todo newTodo = new Todo(todoInput);
+      Todo.Todos.Add(newTodo);
+      Console.WriteLine("Todo hinzugefügt:\n" + newTodo);
       // Lässt den aktuellen Prozess schlafen.
+      Todo.SerializeAll();
       Thread.Sleep(2000); // 2 Sekunden delay für Ansicht
       // Console.ReadLine(); // User entscheidet länge der Pause
       break;
@@ -98,11 +102,12 @@ do
       // todos.Remove("Bei Penny einkaufen gehen.");
 
       // hole todo, vor dem löschen, zum anzeigen
-      string todoToRemove = todos[todoIndex];
+      Todo todoToRemove = Todo.Todos[todoIndex];
       // lösche todo
-      todos.RemoveAt(todoIndex);
+      Todo.Todos[todoIndex].IsComplete = true;
       // zeige gelöschtes todo dem user
-      Console.WriteLine($"GELÖSCHT: {todoToRemove}");
+      Todo.SerializeAll();
+      Console.WriteLine($"Todo erledigt:\n{todoToRemove}");
       showTodos();
       break;
     case "4":
@@ -111,10 +116,11 @@ do
       var index = getIndex("Welches Todo möchtest du anpassen?");
 
       Console.WriteLine("Was möchtest du stattdessen tun?");
-      var newTodo = Console.ReadLine();
-      todos[index] = newTodo;
+      string newText = Console.ReadLine();
 
-      Console.WriteLine("Text verändert: " + newTodo);
+      Todo.Todos[index].Title = newText;
+      Todo.SerializeAll();
+      Console.WriteLine("Text verändert: " + Todo.Todos[index]);
       showTodos();
       break;
   }
