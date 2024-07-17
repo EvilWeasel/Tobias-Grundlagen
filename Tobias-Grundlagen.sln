@@ -36,11 +36,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Buchverwaltungssystem", "Bu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fahrzeugverwaltungssystem", "Fahrzeugverwaltungssystem\Fahrzeugverwaltungssystem.csproj", "{CD026AF2-1E28-4916-8BCC-302336884927}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aufgabenverwaltungssystem", "Aufgabenverwaltungssystem\Aufgabenverwaltungssystem.csproj", "{5237ADED-82AD-4858-9BAF-82637F9BF173}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aufgabenverwaltungssystem", "Aufgabenverwaltungssystem\Aufgabenverwaltungssystem.csproj", "{5237ADED-82AD-4858-9BAF-82637F9BF173}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticVSInstance", "StaticVSInstance\StaticVSInstance.csproj", "{3001B4E5-14FA-4BC6-A187-1495607F7AB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticVSInstance", "StaticVSInstance\StaticVSInstance.csproj", "{3001B4E5-14FA-4BC6-A187-1495607F7AB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoWebappAbstraktion", "DemoWebappAbstraktion\DemoWebappAbstraktion.csproj", "{291E9C71-1652-4E84-B11C-BCBC312CFB70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoWebappAbstraktion", "DemoWebappAbstraktion\DemoWebappAbstraktion.csproj", "{291E9C71-1652-4E84-B11C-BCBC312CFB70}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnMaui", "LearnMaui\LearnMaui.csproj", "{299BD352-BAC5-4A2D-A8CE-33CE911FA35A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhonewordMaui", "PhonewordMaui\PhonewordMaui.csproj", "{B83247CB-4EA0-437D-881D-3ADB20B79D1C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhonewordMauiBlazor", "PhonewordMauiBlazor\PhonewordMauiBlazor.csproj", "{25542EC2-243B-4CD3-B861-126A75C7EE86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleHelpers", "ConsoleHelpers\ConsoleHelpers.csproj", "{6B7BCEF9-BD38-4B91-8653-7125628963B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -116,6 +124,28 @@ Global
 		{291E9C71-1652-4E84-B11C-BCBC312CFB70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{291E9C71-1652-4E84-B11C-BCBC312CFB70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{291E9C71-1652-4E84-B11C-BCBC312CFB70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{299BD352-BAC5-4A2D-A8CE-33CE911FA35A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{299BD352-BAC5-4A2D-A8CE-33CE911FA35A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{299BD352-BAC5-4A2D-A8CE-33CE911FA35A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{299BD352-BAC5-4A2D-A8CE-33CE911FA35A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{299BD352-BAC5-4A2D-A8CE-33CE911FA35A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{299BD352-BAC5-4A2D-A8CE-33CE911FA35A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B83247CB-4EA0-437D-881D-3ADB20B79D1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B83247CB-4EA0-437D-881D-3ADB20B79D1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B83247CB-4EA0-437D-881D-3ADB20B79D1C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B83247CB-4EA0-437D-881D-3ADB20B79D1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B83247CB-4EA0-437D-881D-3ADB20B79D1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B83247CB-4EA0-437D-881D-3ADB20B79D1C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{25542EC2-243B-4CD3-B861-126A75C7EE86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25542EC2-243B-4CD3-B861-126A75C7EE86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25542EC2-243B-4CD3-B861-126A75C7EE86}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{25542EC2-243B-4CD3-B861-126A75C7EE86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25542EC2-243B-4CD3-B861-126A75C7EE86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25542EC2-243B-4CD3-B861-126A75C7EE86}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6B7BCEF9-BD38-4B91-8653-7125628963B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B7BCEF9-BD38-4B91-8653-7125628963B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B7BCEF9-BD38-4B91-8653-7125628963B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B7BCEF9-BD38-4B91-8653-7125628963B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
