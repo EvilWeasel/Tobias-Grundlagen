@@ -1,5 +1,81 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+<div class="my-layout">
 
-Welcome to your new app.
+  <h3>Home</h3>
+
+  <label>
+    Enter phoneword
+    <input type="text" name="phoneNumberText" @bind="translatedNumber" />
+  </label>
+  <button @onclick="OnTranslate">Translate</button>
+  <button disabled="@CallDisabled" @onclick="OnCall">@CallButtonText</button>
+</div>
+
+<style>
+  .my-layout {
+    display: flex;
+    flex-direction: column;
+    & button {
+      background-color: mediumpurple;
+      border-radius: 10px;
+      color:white;
+      margin-top: 10px;
+      padding: 8px;
+    }
+    & button:hover {
+      animation: changeColor 5s linear infinite;
+    }   
+
+    & input {
+      display: block;
+      width: 100%;
+      background-color: rgba(0,0,0,.2);
+      color: white;
+      border-color: rgba(0,0,0,.2);
+    }
+    & h3 {
+      color: fuchsia;
+      text-shadow: white;
+    }
+    & label {
+      font-weight: 700;
+    }
+  }
+
+  @@keyframes changeColor {
+            0% { box-shadow: 0 0 15px 2px hsl(0, 100%, 50%); }
+            25% { box-shadow: 0 0 15px 2px hsl(90, 100%, 50%); }
+            50% { box-shadow: 0 0 15px 2px hsl(180, 100%, 50%); }
+            75% { box-shadow: 0 0 15px 2px hsl(270, 100%, 50%); }
+            100% { box-shadow: 0 0 15px 2px hsl(360, 100%, 50%); }
+   }
+</style>
+
+@code {
+  bool CallDisabled = false;
+  string translatedNumber = "1-555-NETMAUI";
+  string CallButtonText = "Call";
+  private void OnTranslate()
+  {
+    string number = Core.PhonewordTranslator.ToNumber(translatedNumber);
+
+    if (!string.IsNullOrEmpty(translatedNumber))
+    {
+      // TODO:
+      CallButtonText = "Call " + number;
+      CallDisabled = false;
+    }
+    else
+    {
+      // TODO:
+      CallButtonText = "You picked the wrong number, fool!";
+      CallDisabled = true;
+    }
+  }
+  async void OnCall()
+  {
+    await ((MainPage)App.Current!.MainPage!).ShowAlert("555-6549845");
+
+  }
+}
