@@ -46,3 +46,8 @@ s. "Die Woche" +:
 - Wir machen zu den regulären Zeiten Pause
 - Nach den Präsentationen und Feedbacks bekommt ihr die Chance mir und meiner Projektwoche Feedback zu geben
 - Wochenende?
+
+8:30 Uhr....
+Beginn 9 Uhr.
+9-Mittag => 12
+12:45-14:30 => 7
